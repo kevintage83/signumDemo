@@ -1,21 +1,182 @@
-<!--The content below is only a placeholder and can be replaced.-->
-<div style="text-align:center">
-  <h1>
-    Welcome to {{ title }}!
-  </h1>
-  <img width="300" alt="Angular Logo" src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNTAgMjUwIj4KICAgIDxwYXRoIGZpbGw9IiNERDAwMzEiIGQ9Ik0xMjUgMzBMMzEuOSA2My4ybDE0LjIgMTIzLjFMMTI1IDIzMGw3OC45LTQzLjcgMTQuMi0xMjMuMXoiIC8+CiAgICA8cGF0aCBmaWxsPSIjQzMwMDJGIiBkPSJNMTI1IDMwdjIyLjItLjFWMjMwbDc4LjktNDMuNyAxNC4yLTEyMy4xTDEyNSAzMHoiIC8+CiAgICA8cGF0aCAgZmlsbD0iI0ZGRkZGRiIgZD0iTTEyNSA1Mi4xTDY2LjggMTgyLjZoMjEuN2wxMS43LTI5LjJoNDkuNGwxMS43IDI5LjJIMTgzTDEyNSA1Mi4xem0xNyA4My4zaC0zNGwxNy00MC45IDE3IDQwLjl6IiAvPgogIDwvc3ZnPg==">
+<div>  
+  <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" style="z-index: -1">
+      <div class="item0">
+          <h1>Signum Global Advisors</h1>
+          <h4>Policy & Strategy</h4>
+      </div>
+      <div class="item1">
+        <h4 class="location">New York</h4>&nbsp;
+        <div class="locationLogo">|</div>&nbsp;
+        <h4 class="location">London</h4>&nbsp;
+        <div class="locationLogo">|</div>&nbsp;
+        <h4 class="location">Washington D.C.</h4>
+      </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img style="max-height: 797px" class="d-block w-100" src="../assets/US-Capitol.jpeg" alt="Washington DC">
+      </div>
+      <div class="carousel-item">
+        <img style="max-height: 797px" class="d-block w-100" src="../assets/claudio-schwarz-purzlbaum-HUROgx3BSq4-unsplash.jpg" alt="New York">
+      </div>
+      <div class="carousel-item">
+        <img style="max-height: 797px" class="d-block w-100" src="../assets/bigBen2.jpg" alt="London">
+      </div>
+    </div>
+  </div>  
 </div>
-<h2>Here are some links to help you start: </h2>
-<ul>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/tutorial">Tour of Heroes</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://angular.io/cli">CLI Documentation</a></h2>
-  </li>
-  <li>
-    <h2><a target="_blank" rel="noopener" href="https://blog.angular.io/">Angular blog</a></h2>
-  </li>
-</ul>
 
+<nav class="item2">
+  <ul>
+      <li class="grow" style="list-style-type: none"><a href="#" style="font-size: 12pt">Home</a></li><br>
+      <li class="grow"><a href="#ourFirm" style="font-size: 12pt">Our Firm</a></li><br>
+      <li class="grow"><a href="#leadershipTeam" style="font-size: 12pt">People</a></li><br>
+      <li class="grow"><a href="#services" style="font-size: 12pt">Services</a></li><br>
+      <li class="grow"><a href="#policyResearch" style="font-size: 12pt" onclick="">Research</a></li><br>
+      <li class="grow"><a href="#opinion" style="font-size: 12pt">Opinion</a></li><br>
+      <li class="grow"><a href="#news" style="font-size: 12pt">News</a></li><br>
+      <li class="grow"><a href="#contact" style="font-size: 12pt">Contact</a></li>
+  </ul>         
+</nav>
+
+<div class="grid-container">           
+  <div class="item3">
+    <h1 class="ourFirmHeader" id="ourFirm">Our Firm</h1>
+    <p class="ourFirmParagraph" style="display: inline-block"> 
+        Signum is a new type of advisory firm at the intersection of policy and markets. Signum works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements that will have a material impact upon markets, sectors, and asset classes. We provide the highest quality predictive research, market insights and policy events.  Signum’s Executive team has enjoyed unique exposure to decision-making at senior levels - political and financial. Our clients are better prepared to navigate increased political volatility with greater clarity and certainty.  The firm operates globally from offices in New York, London and Washington D.C.
+    </p>
+  </div> 
+  <h1 id="leadershipTeam" class="leadershipTeamHeadline">Leadership Team</h1>
+  <img class="item4" src="../assets/Myers-Charles-cropped-360x340.png" alt="Charles Myers">
+  <div class="item5">  
+<div class="placemat">
+    <h2 class="teamBiographyHeaders">Charles Myers</h2>
+      <h4 class="teamBiographySubheaders">Chairman</h4>
+      <hr style="background-color: white; width: 25%; box-align: left;">
+      <p class="teamBiographies">
+        Charles has over 20 years of US political and electoral experience advising candidates in Presidential, Senate, House of Representatives, Gubernatorial and Mayoral races, including Hillary Clinton for President 2016. 
+      </p>
+      <p class="teamBiographies">
+        He also has 25 years of experience in global financial markets. As Chairman of Signum Global, Charles works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements.
+      </p>
+      <a href="" class="fullBio" (click)="sendMessage()" id="charlesMyersFullBio">FULL BIO</a> 
+    </div>
+  </div>
+
+  <img src="../assets/Angela-Dalton-Headshot-500x500.jpg" class="item6" alt="Angela Dalton">
+  <div class="item7">
+    <div class="placemat">
+        <h2 class="teamBiographyHeaders">Angela Dalton</h2>
+        <h4 class="teamBiographySubheaders">Senior Partner</h4>
+        <hr>
+        <p class="teamBiographies">
+          Angela Dalton is a Senior Partner of Signum Global Advisors. She has 19 years of experience in capital markets spanning UBS, Evercore and Guggenheim. Most recently, she served as TMT Equities Sector Head at both Evercore and Guggenheim, and was Co-Founder of the Evercore Equities business.
+        </p>
+        <p class="teamBiographies">
+          At Signum, she spends most of her time at the intersection of policy and emerging technology, with an emphasis on video gaming, disruptive entertainment models and blockchain. She is currently an adviser to Coburn Ventures, a firm serving investors in navigating monumental change, as well as to Mythical Games, a next-generation video game company. She is on the Advisory Board of the Wall Street Blockchain Alliance and holds a BS and a BA from The University of Kansas and an MBA from The University of Chicago.
+        </p>
+        <a href="" class="fullBio">FULL BIO</a>
+    </div>
+  </div>
+
+  <img src="../assets/jasonPress.png" class="item8" alt="Jason Press">
+  <div class="item9">
+    <div class="placemat">
+    <h2 class="teamBiographyHeaders">Jason Press</h2>
+    <h4 class="teamBiographySubheaders">Senior Partner</h4>
+    <hr>
+    <p class="teamBiographies">
+      With more than 20 years in the financial markets industry, Jason Press leads Signum Global Advisors's sales and distribution efforts. He works with a wide variety of financial institutions, providing insights, and forecasting how political and global macro developments move equity, foreign exchange, and fixed income markets. 
+    </p>
+    <p class="teamBiographies">
+      Jason was a senior member of Eurasia Group, and previous to that worked in emerging markets investment strategy at Citigroup and Goldman Sachs in New York, Hong Kong, Singapore, and Sao Paulo.
+    </p>
+    <a href="" class="fullBio">FULL BIO</a>
+  </div>
+  </div>
+  <img src="../assets/andrew-bishop.jpg" class="item10" alt="Andrew Bishop">
+  <div class="item11">
+    <div class="placemat">
+    <h2 class="teamBiographyHeaders">Andrew Bishop</h2>
+    <h4 class="teamBiographySubheaders">Partner</h4>
+    <hr>
+    <p class="teamBiographies">
+      Andrew Bishop, Partner at Signum Global Advisors, is an established political analyst with a ten-year track record of advising institutional investors, corporates and governments on political risks in developed, emerging, and frontier markets. As Global Head of Policy Research, Andrew directs and oversees Signum Global’s policy-related analytical products and partners with clients to address questions about critical political uncertainties. Andrew is head of Signum's Washington, D.C. office.
+    </p>
+    <p class="teamBiographies">
+      Andrew joined Signum from Eurasia Group where he served as Deputy Head of Research and was also a Director in the firm’s Global Macro practice. Prior to that, Andrew was a senior manager in the World Economic Forum’s strategic foresight and risk analysis unit for six years, during which he regularly participated in the organization’s annual meeting in Davos.
+    </p>
+    <a href="" class="fullBio">FULL BIO</a>
+  </div>
+  </div>
+  <img src="../assets/annaRosenberg.png" class="item12" alt="Anna Rosenberg">
+  <div class="item13">
+    <div class="placemat">
+    <h2 class="teamBiographyHeaders">Anna Rosenberg</h2>
+    <h4 class="teamBiographySubheaders">Partner</h4>
+    <hr>
+    <p class="teamBiographies">
+      Anna Rosenberg is Partner, Head of Europe and UK and member of Signum’s Global Management Committee.
+    </p>
+    <p class="teamBiographies">
+      Over the past ten years, Anna has advised executives of multinational companies in managing their global market portfolios. She helps senior executives better plan for and respond to forces outside of their control, such as political and economic risk, to ensure their businesses can navigate through difficult times and continue to perform.
+    </p>
+    <a href="" class="fullBio">FULL BIO</a>
+  </div>
+
+  </div>
+  <img style="max-width: 400px" src="../assets/downingStreetWhitehall.jpg" class="item14" alt="Whitehall and Downing Street">
+ 
+  <div class="item15">
+    <div class="placemat">    
+      <h2 id="policyResearch" class="policyResearchHeadline">Policy Research and Analytics</h2>
+      <ul style="font-size: 12pt" class="policyResearchParagraph">       
+        <li>Generate the highest quality independent, predictive policy research</li>
+        <li>Assess and anticipate the impact of actions by lawmakers in Washington, Westminster, Brussels, and elsewhere</li>
+        <li>Deliver company and portfolio specific insights to meet key commercial objectives</li>
+        <li>Provide greater predictability in times of uncertainty</li>
+      </ul>
+    </div>
+  </div>
+  <div class="item16">
+    <div class="placemat">
+      <h2 class="institutionalInvestorHeadline">Institutional Investor & Corporate Advisory</h2>
+      <ul class="institutionalInvestorParagraph">
+        <li>Exclusive, high-touch client service customized to individual client preferences</li>
+        <li>CEO and Board counsel for business-critical financial and political issues</li>
+        <li>Forecast social, political and economic trends to inform corporate and investor strategies</li>
+        <li>Roadshows with world leaders in policy and technology</li>
+      </ul>
+    </div>
+  </div>
+  <img src="../assets/nYSETradingFloor.jpg" class="item17" alt="NYSE Trading Floor">
+  <img src="../assets/nYSETradingFloor.jpg" class="item18" alt="NYSE Trading Floor">
+  <div class="item19">
+    <div class="placemat">
+        <h2 class="differentiationHeadline">Differentiation</h2>
+        <ul style="font-size: 12pt" class="differentiationParagraph">
+          <li>Rigorous analytical capabilities: leadership has extensive experience in political risk as well as investor & corporate advisory and strategy.</li>
+          <li>Unique policy meetings and roundtable events with our Global Advisory Board, government officials and others within our collective network</li>
+          <li>An independent Advisory firm, Signum has representation across the political spectrum</li>
+          <li>Signum offers 'calls' only on topics where we are confident we have an edge; the calls are always predictive and at times out-of-consensus, buttressed by scenario analysis</li>
+        </ul>
+    </div>
+  </div>
+  <div class="item20" id="research">research</div> 
+  <div class="item21" id="opinion">opinion</div> 
+  <div class="item22">
+    <h2 id="news">Media Appearances</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/xC6JPwGKXo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+    <br>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/DPPbCKUdIns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </div> 
+  <div class="item23">
+    <h2 id="contact">Contact</h2>
+    <p>Enter your details to receive notifications about Signum research and events.</p>
+    <input style="display: inline" placeholder="Name"> &nbsp; &nbsp;
+    <input style="display: inline" placeholder="Email">
+  </div>               
+</div>      
+<img src="../assets/worldGridBanner.jpg" class="w-100">
 <router-outlet></router-outlet>
