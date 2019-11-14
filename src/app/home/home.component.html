@@ -1,4 +1,4 @@
-<div>  
+<div id="home">  
   <div id="carouselExampleSlidesOnly" class="carousel slide carousel-fade" data-ride="carousel" style="z-index: -1">
       <div class="item0">
           <h1>Signum Global Advisors</h1>
@@ -27,15 +27,15 @@
 
 <nav class="item2">
   <ul>
-      <li class="grow" style="list-style-type: none"><a href="#" style="font-size: 12pt">Home</a></li><br>
-      <li class="grow"><a href="#ourFirm" style="font-size: 12pt">Our Firm</a></li><br>
-      <li class="grow"><a href="#leadershipTeam" style="font-size: 12pt">People</a></li><br>
-      <li class="grow"><a href="#services" style="font-size: 12pt">Services</a></li><br>
-      <li class="grow"><a href="#policyResearch" style="font-size: 12pt" onclick="">Research</a></li><br>
-      <li class="grow"><a href="#opinion" style="font-size: 12pt">Opinion</a></li><br>
-      <li class="grow"><a href="#news" style="font-size: 12pt">News</a></li><br>
-      <li class="grow"><a href="#contact" style="font-size: 12pt">Contact</a></li><br>
-      <li class="grow"><a routerLink="login" style="font-size: 12pt">Login</a></li>
+      <li class="grow" style="list-style-type: none"><a [routerLink] = "['/']" fragment="home" style="font-size: 12pt">Home</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="services" style="font-size: 12pt">Services</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="news" style="font-size: 12pt">News</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="contact" style="font-size: 12pt">Contact</a></li><br>
+      <li class="grow"><a routerLink="/login" style="font-size: 12pt">Login</a></li>
   </ul>         
 </nav>
 
@@ -59,11 +59,11 @@
       <p class="teamBiographies">
         He also has 25 years of experience in global financial markets. As Chairman of Signum Global, Charles works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements.
       </p>
-      <a href="#charlesMyersFullBio" class="fullBio" (click)="sendCharlesMessage()">FULL BIO</a>  
+      <a [routerLink] = "['/']" fragment="charlesMyersFullBio" class="fullBio" (click)="sendCharlesMessage()">FULL BIO</a>  
     </div>
   </div>
 
-  <img src="../assets/Angela-Dalton-Headshot-500x500.jpg" class="item6" alt="Angela Dalton">
+  <img src="../assets/Angela-Dalton-Headshot-500x500.jpg" class="item6" alt="Angela Dalton" id="angelaDaltonFullBio">
   <div class="item7">
     <div class="placemat">
         <h2 class="teamBiographyHeaders">Angela Dalton</h2>
@@ -75,11 +75,11 @@
         <p class="teamBiographies">
           At Signum, she spends most of her time at the intersection of policy and emerging technology, with an emphasis on video gaming, disruptive entertainment models and blockchain. She is currently an adviser to Coburn Ventures, a firm serving investors in navigating monumental change, as well as to Mythical Games, a next-generation video game company. She is on the Advisory Board of the Wall Street Blockchain Alliance and holds a BS and a BA from The University of Kansas and an MBA from The University of Chicago.
         </p>
-        <a href="" (click)="sendAngelasMessage()" class="fullBio">FULL BIO</a>
+        <a [routerLink] = "['/']" fragment="angelaDaltonFullBio" (click)="sendAngelasMessage()" class="fullBio">FULL BIO</a>
     </div>
   </div>
 
-  <img src="../assets/jasonPress.png" class="item8" alt="Jason Press">
+  <img src="../assets/jasonPress.png" class="item8" alt="Jason Press" id="jasonPressFullBio">
   <div class="item9">
     <div class="placemat">
     <h2 class="teamBiographyHeaders">Jason Press</h2>
@@ -91,10 +91,10 @@
     <p class="teamBiographies">
       Jason was a senior member of Eurasia Group, and previous to that worked in emerging markets investment strategy at Citigroup and Goldman Sachs in New York, Hong Kong, Singapore, and Sao Paulo.
     </p>
-    <a href="" class="fullBio">FULL BIO</a>
+    <a [routerLink] = "['/']" fragment="jasonPressFullBio" (click)="sendJasonsMessage()" class="fullBio">FULL BIO</a>
   </div>
   </div>
-  <img src="../assets/andrew-bishop.jpg" class="item10" alt="Andrew Bishop">
+  <img src="../assets/andrew-bishop.jpg" class="item10" alt="Andrew Bishop" id="andrewBishopFullBio">
   <div class="item11">
     <div class="placemat">
     <h2 class="teamBiographyHeaders">Andrew Bishop</h2>
@@ -106,10 +106,10 @@
     <p class="teamBiographies">
       Andrew joined Signum from Eurasia Group where he served as Deputy Head of Research and was also a Director in the firm’s Global Macro practice. Prior to that, Andrew was a senior manager in the World Economic Forum’s strategic foresight and risk analysis unit for six years, during which he regularly participated in the organization’s annual meeting in Davos.
     </p>
-    <a href="" class="fullBio">FULL BIO</a>
+    <a [routerLink] = "['/']" fragment="andrewBishopFullBio" (click)="sendAndrewsMessage()" class="fullBio">FULL BIO</a>
   </div>
   </div>
-  <img src="../assets/annaRosenberg.png" class="item12" alt="Anna Rosenberg">
+  <img src="../assets/annaRosenberg.png" class="item12" alt="Anna Rosenberg" id="annaRosenbergFullBio">
   <div class="item13">
     <div class="placemat">
     <h2 class="teamBiographyHeaders">Anna Rosenberg</h2>
@@ -121,7 +121,7 @@
     <p class="teamBiographies">
       Over the past ten years, Anna has advised executives of multinational companies in managing their global market portfolios. She helps senior executives better plan for and respond to forces outside of their control, such as political and economic risk, to ensure their businesses can navigate through difficult times and continue to perform.
     </p>
-    <a href="" class="fullBio">FULL BIO</a>
+    <a [routerLink] = "['/']" fragment="annaRosenbergFullBio" (click)="sendAnnasMessage()" class="fullBio">FULL BIO</a>
   </div>
 
   </div>
@@ -169,8 +169,8 @@
     <iframe width="560" height="315" src="https://www.youtube.com/embed/xC6JPwGKXo0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
     </iframe>
     <br>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/DPPbCKUdIns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-    </iframe>
+     <iframe width="560" height="315" src="https://www.youtube.com/embed/DPPbCKUdIns" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe> 
   </div> 
   <div class="item23">
     <h2 id="contact">Contact</h2>
