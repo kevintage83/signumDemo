@@ -1,7 +1,5 @@
 <div class="mainContainer">
-<h1 class="welcomeText">
-  Reset password
-</h1>
+<h1 class="signInText">Create Account</h1>
 <br>
 <nav class="item2">
     <ul>
@@ -16,22 +14,34 @@
       <li class="grow"><a routerLink="/login" style="font-size: 12pt">Login</a></li>
     </ul>         
   </nav>
-<p class="signInText">
-  Enter the email associated with your account and we'll send an email with instructions to reset your password.
+
+  <div class="documentsCard">
+<p>
+  First Name:
+  <input type="text">
 </p>
 <br>
+<p>
+  Last Name:
+  <input type="text">
+</p>
 <br>
-<div class="documentsCard">
-  <p>
-    Email:
-   <input type="email">
-  </p>
-  <br>
-  <a routerLink="/login">Wait, I remember my password!</a>
-  <br>
-  <button type="submit">Reset password</button>
-  <br>
-  <a routerLink="/termsOfService">Terms of Service</a>
-  <a routerLink="/home" fragment="contact">Help + Support</a>
+<p>
+  Email:
+  <input type="email">
+</p>
+<br>
+<p>
+  Create a password:
+  <input type="password">
+</p>
+<br>
+<p>
+  Confirm your password:
+  <input type="password">
+</p>
+<br>
+<button>Create Account</button>&nbsp;
+<a routerLink="/login">Return to Login</a>
 </div>
 </div>

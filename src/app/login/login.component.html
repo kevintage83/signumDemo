@@ -1,16 +1,35 @@
-<h1>
-  WELCOME!
-</h1>
-<p>Please sign in to the client portal</p>
-<p>
-  Member Login:
-</p>
-<input placeholder="Email"><i class="fas fa-user"></i>
-<br>
-<input placeholder="Password"><i class="fas fa-lock"></i>
-<br>
-<p><input type="checkbox">
-Remember me</p>
-<button type="submit">Login</button>&nbsp;
-<a routerLink="/resetPassword">Forgot password?</a>&nbsp;
-<a routerLink="/registerNow">Register now</a>
+<div class="mainContainer">
+  <h1 class="welcomeText">
+    WELCOME!
+  </h1>
+  <p class="signInText">Please sign in to the client portal</p>
+  <nav class="item2">
+    <ul>
+      <li class="grow" style="list-style-type: none"><a [routerLink] = "['/']" fragment="home" style="font-size: 12pt">Home</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="services" style="font-size: 12pt">Services</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="news" style="font-size: 12pt">News</a></li><br>
+      <li class="grow"><a [routerLink] = "['/']" fragment="contact" style="font-size: 12pt">Contact</a></li><br>
+      <li class="grow"><a routerLink="/login" style="font-size: 12pt">Login</a></li>
+    </ul>         
+  </nav>
+  
+  <div class="documentsCard">
+    <p>
+      {{ message }}
+    </p>
+    <input placeholder="Email" id="clientName" *ngIf="!show"><i class="fas fa-user"></i>
+    <br>
+    <input placeholder="Password"><i class="fas fa-lock"></i>
+    <br>
+    <p><input type="checkbox">
+      Remember me
+    </p>
+    <button type="submit" routerLink="/clientHome" id="clientLogin" class="button">Login</button>&nbsp;
+    <a routerLink="/resetPassword">Forgot password?</a>&nbsp;
+    <a routerLink="/register">Register</a>
+  </div>
+</div>

@@ -7,6 +7,9 @@ import { AppComponent } from './app.component';
 import { HomeComponent } from './home/home.component';
 import { ForgotPasswordComponent } from './forgot-password/forgot-password.component';
 import { LoginComponent } from './login/login.component';
+import { RegistrationPageComponent } from './registration-page/registration-page.component';
+import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
+import { ClientWelcomeComponent } from './client-welcome/client-welcome.component';
 
 
 @NgModule({
@@ -15,7 +18,10 @@ import { LoginComponent } from './login/login.component';
     routingComponents,
     HomeComponent,
     ForgotPasswordComponent,
-    LoginComponent
+    LoginComponent,
+    RegistrationPageComponent,
+    ClientHomePageComponent,
+    ClientWelcomeComponent
   ],
   imports: [
     BrowserModule,
