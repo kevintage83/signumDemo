@@ -10,6 +10,13 @@ import { LoginComponent } from './login/login.component';
 import { RegistrationPageComponent } from './registration-page/registration-page.component';
 import { ClientHomePageComponent } from './client-home-page/client-home-page.component';
 import { ClientWelcomeComponent } from './client-welcome/client-welcome.component';
+import { CreateAccountComponent } from './create-account/create-account.component';
+import { AndrewBishopBioComponent } from './andrew-bishop-bio/andrew-bishop-bio.component';
+import { AngelaDaltonBioComponent } from './angela-dalton-bio/angela-dalton-bio.component';
+import { AnnaRosenbergBioComponent } from './anna-rosenberg-bio/anna-rosenberg-bio.component';
+import { CharlesMyersBioComponent } from './charles-myers-bio/charles-myers-bio.component';
+import { JasonPressBioComponent } from './jason-press-bio/jason-press-bio.component';
+import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
 
 
 @NgModule({
@@ -18,10 +25,17 @@ import { ClientWelcomeComponent } from './client-welcome/client-welcome.componen
     routingComponents,
     HomeComponent,
     ForgotPasswordComponent,
+    AndrewBishopBioComponent,
+    AngelaDaltonBioComponent,
+    AnnaRosenbergBioComponent,
+    CharlesMyersBioComponent,
+    JasonPressBioComponent,
     LoginComponent,
     RegistrationPageComponent,
     ClientHomePageComponent,
-    ClientWelcomeComponent
+    ClientWelcomeComponent,
+    CreateAccountComponent,
+    TermsOfServiceComponent
   ],
   imports: [
     BrowserModule,
