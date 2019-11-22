@@ -12,7 +12,7 @@ export class CreateAccountComponent implements OnInit {
 
   ngOnInit() {
     setTimeout(() => {
-      this.router.navigate([' ']);
+      this.router.navigate(['/login']);
   }, 5000);
   }
 

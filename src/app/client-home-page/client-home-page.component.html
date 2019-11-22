@@ -1,20 +1,25 @@
-<div class="backgroundContainer">
-    <h1 class="welcomeText">Welcome, user!</h1> 
-
-    <nav class="item2">
+<header>
+    <h3 style="color: white;" class="logo">Welcome, Test User!</h3>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
         <ul>
-            <li class="grow" style="list-style-type: none"><a [routerLink] = "['/']" fragment="home" style="font-size: 12pt">Home</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="services" style="font-size: 12pt">Services</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="news" style="font-size: 12pt">News</a></li><br>
-            <li class="grow"><a [routerLink] = "['/']" fragment="contact" style="font-size: 12pt">Contact</a></li><br>
-            <li class="grow"><a routerLink="/login" style="font-size: 12pt">Login</a></li>
-        </ul>         
+        <li style="list-style-type: none"><a [routerLink]="['/']" fragment="home" style="font-size: 12pt">Home</a></li>
+        <li><a [routerLink]="['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li>
+        <li><a [routerLink]="['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li>
+        <li><a [routerLink]="['/']" fragment="services" style="font-size: 12pt">Services</a></li>
+        <li><a [routerLink]="['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li>
+        <li><a [routerLink]="['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li>
+        <li><a [routerLink]="['/']" fragment="news" style="font-size: 12pt">News</a></li>
+        <li><a [routerLink]="['/']" fragment="contact" style="font-size: 12pt">Contact</a></li>
+        <li><a routerLink="/login" style="font-size: 12pt">Login</a></li>
+        </ul>
     </nav>
-
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+      
+<div class="content">
     <div class="documentsCard">
         <a href="https://drive.google.com/file/d/0BzIVgVIUvrcgMjIxNTRkNDMtY2E4Ni00NGIyLWFiZGQtNjYyNTAwNGEzNjU1/view?usp=sharing">EJ Strategies</a>
         <br>
@@ -23,3 +28,4 @@
         <a href="https://drive.google.com/file/d/0BzIVgVIUvrcgY2I5MGVlMDctOTZlMS00MjE4LWIxNzctYzRkMjNlMzRkZWZj/view?usp=sharing">Memorandum of Understanding</a>
     </div>
 </div>
+      

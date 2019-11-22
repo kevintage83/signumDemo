@@ -17,6 +17,7 @@ import { AnnaRosenbergBioComponent } from './anna-rosenberg-bio/anna-rosenberg-b
 import { CharlesMyersBioComponent } from './charles-myers-bio/charles-myers-bio.component';
 import { JasonPressBioComponent } from './jason-press-bio/jason-press-bio.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
@@ -35,7 +36,8 @@ import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.com
     ClientHomePageComponent,
     ClientWelcomeComponent,
     CreateAccountComponent,
-    TermsOfServiceComponent
+    TermsOfServiceComponent,
+    PageNotFoundComponent
   ],
   imports: [
     BrowserModule,

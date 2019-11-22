@@ -13,6 +13,7 @@ import { AngelaDaltonBioComponent } from './angela-dalton-bio/angela-dalton-bio.
 import { AnnaRosenbergBioComponent } from './anna-rosenberg-bio/anna-rosenberg-bio.component';
 import { CharlesMyersBioComponent } from './charles-myers-bio/charles-myers-bio.component';
 import { TermsOfServiceComponent } from './terms-of-service/terms-of-service.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 const routes: Routes = [
     { path: '', pathMatch: 'full', component: HomeComponent },
@@ -27,6 +28,7 @@ const routes: Routes = [
     { path: 'clientHome', component: ClientHomePageComponent},
     { path: 'accountCreated', component: CreateAccountComponent },
     { path: 'termsOfService', component: TermsOfServiceComponent },
+    { path: 'pageNotFound', component: PageNotFoundComponent},
     { path: '**', redirectTo: '' }
 ];
 
