@@ -1,3 +1,27 @@
-<h1>Congratulations!</h1>
-<p>Welcome to the Signum Global Advisory Client Data Service</p>
-<p>You will be redirected to the Home page momentarily...</p>
+<header>
+    <h3 style="color: white;" class="logo">Congratulations!</h3>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <ul>
+        <li style="list-style-type: none"><a [routerLink] = "['/']" fragment="home" style="font-size: 12pt">Home</a></li>
+        <li><a [routerLink] = "['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li>
+        <li><a [routerLink] = "['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li>
+        <li><a [routerLink] = "['/']" fragment="services" style="font-size: 12pt">Services</a></li>
+        <li><a [routerLink] = "['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li>
+        <li><a [routerLink] = "['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li>
+        <li><a [routerLink] = "['/']" fragment="news" style="font-size: 12pt">News</a></li>
+        <li><a [routerLink] = "['/']" fragment="contact" style="font-size: 12pt">Contact</a></li>
+        <li><a routerLink="/login" style="font-size: 12pt">Login</a></li> 
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
+</header>
+        
+<div class="content">
+<div class="documentsCard">
+    <p style="color: white;">Welcome to the Signum Global Advisory Client Data Service</p>
+    <p style="color: white;">You will be redirected to the Home page momentarily...</p>
+</div>
+</div>
