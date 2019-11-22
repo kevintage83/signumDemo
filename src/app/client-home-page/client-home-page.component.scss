@@ -16,13 +16,32 @@ body {
 }
 
 .content {
+  display: flex;
   height: 100vh;
   background-image: url(//unsplash.it/1000/1000);
   background-color: #333;
   background-blend-mode: multiply;
   background-size: cover;
-  display: grid;
   place-items: center;
+}
+
+.content iframe {
+  display: flex;
+  width: 75vw;
+  align-self: flex-end;
+  align-content: flex-end;
+  align-items: flex-end;
+  justify-items: flex-end;
+  justify-content: flex-end;
+  justify-self: flex-end;
+}
+
+.iframeContainer {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  justify-content: flex-end;
+  justify-self: flex-end;
 }
 
 .formInput {
@@ -283,4 +302,10 @@ nav a::after {
 
 .signInText {
     color: white;
+}
+
+.googleDriveEmbed {
+  width: 100%;
+  height: 100%;
+  color: white;
 }

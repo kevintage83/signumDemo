@@ -221,18 +221,6 @@ nav a:hover {
     background-color: #171c32;
 }
 
-.item2 { 
-    display: block;
-    position: fixed;
-    background: none;
-    top: 20%; 
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    margin-left: 0;
-}
 
 nav ul {
     margin: 0;
@@ -241,10 +229,10 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
     margin-left: 1em;
     list-style-type: none;
-}
+  }
 
 nav a {
     color: white;
@@ -252,9 +240,9 @@ nav a {
     font-size: 1.2rem;
     text-transform: uppercase;
     list-style-type: none;
-}
+  }
 
-nav a:hover {
+  nav a:hover {
     transition: all .25s ease-in-out;
 }
 
@@ -266,15 +254,28 @@ nav a::after {
     background: #5ea7f7;
     list-style-type: none;
 }
-
+  
 .grow { 
-    transition: all .5s ease-in-out; 
+  transition: all .5s ease-in-out; 
 }
-     
+    
 .grow:hover { 
-    transform: scale(1.2); 
+  transform: scale(1.2); 
 }
 
 .signInText {
-    color: white;
+  color: white;
+}
+
+.item2 { 
+    display: block;
+    position: fixed;
+    background: none;
+    top: 20%; 
+    text-shadow:
+        -1px -1px 0 #000,
+        1px -1px 0 #000,
+        -1px 1px 0 #000,
+        1px 1px 0 #000;
+    margin-left: 0;
 }

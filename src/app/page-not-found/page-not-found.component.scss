@@ -29,12 +29,6 @@ body {
     border-radius: 7px;
 }
 
-.rememberMeInput {
-    display: flex;
-    justify-self: center;
-}
-
-
 /* navigation styles start here */
 
 header {
@@ -227,18 +221,6 @@ nav a:hover {
     background-color: #171c32;
 }
 
-.item2 { 
-    display: block;
-    position: fixed;
-    background: none;
-    top: 20%; 
-    text-shadow:
-        -1px -1px 0 #000,
-        1px -1px 0 #000,
-        -1px 1px 0 #000,
-        1px 1px 0 #000;
-    margin-left: 0;
-}
 
 nav ul {
     margin: 0;
@@ -247,10 +229,10 @@ nav ul {
 }
 
 nav li {
-    margin-bottom: 1em;
+  margin-bottom: 1em;
     margin-left: 1em;
     list-style-type: none;
-}
+  }
 
 nav a {
     color: white;
@@ -258,9 +240,9 @@ nav a {
     font-size: 1.2rem;
     text-transform: uppercase;
     list-style-type: none;
-}
+  }
 
-nav a:hover {
+  nav a:hover {
     transition: all .25s ease-in-out;
 }
 
@@ -273,14 +255,404 @@ nav a::after {
     list-style-type: none;
 }
 
-.grow { 
-    transition: all .5s ease-in-out; 
-}
-     
-.grow:hover { 
-    transform: scale(1.2); 
+
+
+
+
+@media(min-width: 468px){
+    .item0 { 
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 2;
+        top: 75px;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+    }
+    .item1 { 
+        grid-area: header;
+        position: absolute;
+        left: 0;
+        width: 100%;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 2;
+        top: 75%;
+        margin: 0%;
+        padding: 0%;
+        color: white;
+        text-shadow:
+            -1.75px -1.75px 0 #000,
+            1.75px -1.75px 0 #000,
+            -1.75px 1.75px 0 #000,
+            1.75px 1.75px 0 #000;
+     }
+    .item2 { 
+        display: block;
+        position: fixed;
+        background: none;
+        top: 20%; 
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+        margin-left: 0;
+    }
+    .item3 { 
+        grid-area: ourFirm; 
+        background: url(src\assets\nycAerialDark.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        text-shadow:
+            -1px -1px 0 #000,
+            1px -1px 0 #000,
+            -1px 1px 0 #000,
+            1px 1px 0 #000;
+        height: 797px;
+    }
+    .item4 { 
+        grid-area: charlesPic;
+        align-self: center;
+        justify-self: end;
+        width: 65%;
+        height: auto;
+    }
+    .item5 { grid-area: charlesBio; }
+    .item6 { 
+        grid-area: angelaPic; 
+        align-self: center;
+        justify-self: end;
+        width: 65%;
+        height: auto;
+    }
+    .item7 { grid-area: angelaBio; }
+    .item8 { 
+        grid-area: jasonPic; 
+        align-self: center;
+        justify-self: end;
+        width: 65%;
+        height: auto;
+    }
+    .item9 { grid-area: jasonBio; }
+    .item10 { 
+        grid-area: andrewPic; 
+        align-self: center;
+        justify-self: end;
+        width: 65%;
+        height: auto;
+    }
+    .item11 { grid-area: andrewBio; }
+    .item12 { 
+        grid-area: annaPic; 
+        align-self: center;
+        justify-self: end;
+        width: 65%;
+        height: auto;
+    }
+    .item13 { grid-area: annaBio; }
+    .item14 { 
+        grid-area: servicesPic;
+        width: 100%;
+        height: auto;
+        justify-self: end;
+    }
+    .item15 { 
+        grid-area: servicesInfo;
+        display: -webkit-box;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        background-color: none; 
+    }
+    .item16 { 
+        grid-area: institutionalInfo;
+        display: -webkit-box;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        background-color: none;
+    }
+    .item17 { 
+        grid-area: institutionalPic;
+        width: 80%;
+        height: auto;
+        justify-self: start;
+     }
+    .item18 { grid-area: differentiationPic;
+        width: 80%;
+        height: auto;
+        justify-self: end;
+     }
+    .item19 { 
+        grid-area: differentiationInfo;
+        display: -webkit-box;
+        display: -webkit-flex;
+        justify-content: center;
+        align-items: center;
+        -webkit-box-pack: center;
+        -webkit-box-align: center;
+        background-color: none; 
+    }
+    .item20 { 
+        grid-area: research;
+        color:white;
+    }
+    .item21 { 
+        grid-area: opinion;
+        color:white;
+    }
+    .item22 { 
+        grid-area: news; 
+        color:white;
+    }
+    .item23 { 
+        grid-area: footer; 
+        color:white;
+    }
+    
+    .grid-container {
+        display: grid;
+        grid-template-areas: 
+            'header header'
+            'ourFirm ourFirm'
+            'leadershipTeamHeadline leadershipTeamHeadline'
+            'charlesPic charlesBio'
+            'angelaPic angelaBio'
+            'jasonPic jasonBio'
+            'andrewPic andrewBio'
+            'annaPic annaBio'
+            'servicesPic servicesInfo'
+            'institutionalInfo institutionalPic'
+            'differentiationPic differentiationInfo'
+            'research research'
+            'opinion opinion'
+            'news news'
+            'footer footer';
+        grid-gap: 0px;
+        background-color: #171c32;
+    }
+    
+    .grid-container > div {
+        text-align: center;
+        padding: 20px 0;
+        font-size: 30px; 
+    }
+    
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    nav li {
+        margin-bottom: 1em;
+        margin-left: 1em;
+        list-style-type: none;
+    }
+    
+    nav a {
+        color: white;
+        text-decoration: none;
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        list-style-type: none;
+    }
+    
+    nav a:hover {
+        transition: all .25s ease-in-out;
+    }
+    
+    nav a::after {
+        content: '';
+        display: block;
+        height: 3px;
+        width: 20px;
+        background: #5ea7f7;
+        list-style-type: none;
+    }
+    
+    .ourFirmHeader {
+        color: white;
+        align-self: center;
+        font-size: 2.5em;
+        z-index: 3;
+    }
+    
+    .ourFirmParagraph {
+        width: 65%;
+        text-align: justify;
+        text-justify: inter-word;
+        color:white;
+        font-size: 15pt;
+        z-index: 3;
+        align-self: center;
+    }
+    
+    .grow { 
+        transition: all .5s ease-in-out; 
+    }
+         
+    .grow:hover { 
+        transform: scale(1.2); 
+    }
+    
+    .location {
+        display: inline;
+    }
+    
+    .locationLogo {
+        display: inline;
+        font-size: 20pt;
+        color: #5ea7f7;
+    }
+    
+    .leadershipTeamHeadline {
+        grid-area: leadershipTeamHeadline; 
+        color: white;
+        font-size: 4.5em;
+        text-align: center;
+    }
+    
+    .teamBiographies {
+        text-align: justify;
+        text-justify: inter-word;
+        color:white;
+        font-size: 12pt;
+        z-index: 3;
+        align-self: center;
+        width: 75%;
+        background-color: #212843;
+    }
+    
+    .teamBiographyHeaders {
+        text-align: left;
+        color:white;
+        font-size: 22pt;
+        z-index: 3;
+        align-self: center;
+        background-color: #212843;
+    }
+    
+    .teamBiographySubheaders {
+        text-align: left;
+        color:white;
+        font-size: 16pt;
+        z-index: 3;
+        align-self: center;
+        background-color: #212843;
+    }
+    
+    .policyResearchHeadline{
+        color: white;
+        font-size: 16pt;
+        background-color: #212843;
+        font-size: 1em;
+    }
+    
+    .policyResearchParagraph{
+        text-align: justify;
+        text-justify: inter-word;
+        color:white;
+        font-size: 12pt;
+        list-style-type: none;
+        width: 65%;
+        background-color: #212843;
+    }
+    
+    .institutionalInvestorHeadline{
+        color: white;
+        font-size: 1em;
+        text-align: left;
+        background-color: #212843;
+    }
+    
+    .institutionalInvestorParagraph {
+        color:white;
+        font-size: 12pt;
+        text-align: left;
+        list-style-type: none;
+        list-style-position: initial;
+        list-style-image: initial;
+        font-weight: 400;
+        background-color: #212843;
+    }
+    
+    .differentiationHeadline {
+        color: white;
+        background-color: #212843;
+        align-self: flex-start;
+        padding-left: 1em;
+        font-size: 1em;
+    }
+    
+    .differentiationParagraph {
+        color: white;
+        text-align: left;
+        list-style-type: none;
+        background-color: #212843;
+        margin-left: 0;
+    }
+
+    .placemat{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        width: 75%;
+        margin-right: auto;
+        margin-left: auto;
+        margin-top: auto;
+        margin-bottom: auto;
+        background: #212843;
+    }
+    
 }
 
-.signInText {
-    color: white;
-}
+.differentiationParagraph li::before {
+    content: "\2014";
+    color: #5ea7f7;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    margin-right: 5px;
+  }
+
+  .institutionalInvestorParagraph li::before {
+    content: "\2014";
+    color: #5ea7f7;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .policyResearchParagraph li::before {
+    content: "\2014";
+    color: #5ea7f7;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+  }
+
+  .fullBio {
+      display: flex;
+      font-size: 12pt;
+      align-self: center; 
+  }
+
