@@ -1,4 +1,4 @@
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 770px) {
     body {
         background-color: red;
         display: flex;
@@ -387,15 +387,419 @@
     
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 770px) {
     body {
+        background-color: red;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-color: orange;
+        justify-content: center;
+        margin-top: 25vh;
+        padding: 15px;
+        align-content: center;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .titleText {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 400;
         background-color: white;
     }
-}
+    
+    .subtitleText {
+        display: flex;
+        background-color: red;
+        justify-content: center;
+    }
+    
+    .carouselContainer {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: green;
+        justify-content: center;
+    }
 
-@media only screen and (max-width: 760px) {
-    body {
+    .locationsContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: indigo;
+        height: 90px;
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+        margin-top: 75vh;
+    }
+
+    .nYCContainer {
+        display: flex;
+        background-color: white;
+        align-items: center;
+    }
+
+    .lonContainer {
+        display: flex;
+        background-color: pink;
+        align-items: center;
+    }
+
+    .dCContainer {
+        display: flex;
+        background-color: red;
+        align-items: center;
+    }
+    
+    .ourFirmContainer {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: red;
+        flex-direction: column;
+    }
+
+    .ourFirmTitle {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        margin-top: 5vh;
+        font-size: 4.2rem;
+        line-height: 1em;
+    }
+
+    .ourFirmText {
+        display: flex;
         background-color: blue;
+        justify-content: center;
+    }
+
+    .teamProfilesContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; 
+        width: 100%;
+        background-color: green;
+        margin-top: 5vh;
+        padding: 20px;
+    }
+
+    .leadershipTeamTitle {
+        display: flex;
+        font-size: 4.2rem;
+        line-height: 1em;
+        background-color: yellow;
+    }
+    
+    .charlesMyersContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: indigo;
+    }
+
+    .charlesMyersPic {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .charlesMyersBio {
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+    }
+    
+    .andrewBishopContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: orange;
+    }
+
+    .andrewBishopPic {
+        display: flex;
+        flex-direction: row;
+        background-color: green;
+    }
+
+    .andrewBishopBio {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+    }
+    
+    .angelaDaltonContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .angelaDaltonPic {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .angelaDaltonBio {
+        display: flex;
+        flex-direction: row;
+        background-color: green;
+    }
+    
+    .jasonPressContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .jasonPressPic {
+        display: flex;
+        flex-direction: row;
+        background-color: hotpink;
+    }
+
+    .jasonPressBio {
+        display: flex;
+        flex-direction: row;
+        background-color: indigo;
+    }
+    
+    .annaRosenbergContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: orange;
+    }
+
+    .annaRosenbergPic {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .annaRosenbergBio {
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+    }
+    
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        background-color: violet;
+    }
+    
+    .policyResearchContainer {
+        display: flex;
+        flex-direction: column;
+        height: 90vh;
+        width: auto;
+        background-color: red;
+        justify-content: center;
+    }
+
+    .policyResearchPic {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .policyResearchText {
+        display: flex;
+        flex-direction: row;
+        background-color: blue;
+    }
+    
+    .institutionalInvestorContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        background-color: green;
+        justify-content: center;
+    }
+
+    .institutionalInvestorPic {
+        display: flex;
+        flex-direction: row;
+        background-color: indigo;
+    }
+
+    .institutionalInvestorText {
+        display: flex;
+        flex-direction: row;
+        background-color: yellow;
+    }
+    
+    .differentiationContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        background-color: violet;
+        justify-content: center;
+    }
+
+    .differentiationPic {
+        display: flex;
+        flex-direction: row;
+        background-color: white;
+    }
+
+    .differentiationText {
+        display: flex;
+        flex-direction: row;
+        background-color: orange;
+    }
+    
+    .newsContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        background-color: yellow;
+    }
+
+    .youTubeClip1 {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .youTubeClip2 {
+        display: flex;
+        justify-content: center;
+        background-color: green;
+    }
+    
+    .emailListSignupContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        background-color: orange;
+    }
+
+    .emailListItemsContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: red;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .emailListSignupTitle {
+        display: flex;
+        background-color: white;
+    }
+
+    .emailListSignupSubtitle {
+        display: flex;
+        background-color: green;
+    }
+
+    .emailInputItems {
+        display: flex;
+        flex-direction: column;
+        background-color: red;
+        justify-content: center;
+    }
+
+    .emailListSignupName {
+        display: flex;
+        flex-direction: row;
+        background-color: lightblue;
+    }
+
+    .emailListSignupEmail {
+        display: flex;
+        flex-direction: row;
+        background-color: lightcoral;
+    }
+
+    .emailSignupButton {
+        display: flex;
+        flex-direction: row;
+        background-color: lightcyan;
+    }
+    
+    .contactContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
+        width: 100%;
+        background-color: blue;
+    }
+
+    .contactUsImage {
+        display: flex;
+        background-color: white;
+    }
+
+    .contactUsTitle {
+        display: flex;
+        background-color: orange;
+    }
+    
+    .footerContainer {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .locationFooterContainer {
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        height: 400px;
+        width: 100%;
+        justify-content: center;
+    }
+    
+    .nYCFooterContainer {
+        display: flex;
+        width: 33%;
+        background-color: red;
+    }
+    
+    .londonFooterContainer {
+        display: flex;
+        width: 33%;
+        background-color: green;
+    }
+    
+    .washingtonFooterContainer {
+        display: flex;
+        width: 33%;
+        background-color: violet;
+    }
+    
+    .copyrightInfoContainer {
+        display: flex;
+        width: 1fr;
+        background-color: white;
     }
 }
 
