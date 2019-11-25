@@ -293,18 +293,71 @@
         display: flex;
         background-color: red;
         justify-content: center;
+        flex-direction: column;
+    }
+
+    .emailListSignupTitle {
+        display: flex;
+        background-color: white;
+    }
+
+    .emailListSignupSubtitle {
+        display: flex;
+        background-color: green;
+    }
+
+    .emailInputItems {
+        display: flex;
+        background-color: lightgoldenrodyellow;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .emailListSignupName {
+        display: flex;
+        background-color: lightblue;
+    }
+
+    .emailListSignupEmail {
+        display: flex;
+        background-color: lightcoral;
+    }
+
+    .emailSignupButton {
+        display: flex;
+        background-color: lightcyan;
     }
     
     .contactContainer {
         display: flex;
-        height: auto;
+        flex-direction: column;
+        height: 500px;
+        justify-content: center;
         width: auto;
         background-color: blue;
+    }
+
+    .contactUsImage {
+        display: flex;
+        background-color: white;
+    }
+
+    .contactUsTitle {
+        display: flex;
+        background-color: orange;
     }
     
     .footerContainer {
         display: flex;
-        width: 100vw;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .locationFooterContainer {
+        display: flex;
+        background-color: yellow;
+        height: 400px;
+        justify-content: center;
     }
     
     .nYCFooterContainer {
@@ -328,7 +381,7 @@
     .copyrightInfoContainer {
         display: flex;
         width: 1fr;
-        background-color: yellow;
+        background-color: white;
     }
     
     
