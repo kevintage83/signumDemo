@@ -1,658 +1,348 @@
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:300,600');
-
-:root {
-  --background: rgba(0, 214, 170, .85);
-}
-
-*, *::before, *::after {
-  box-sizing: border-box;
-}
-
-body {
-	margin: 0;
-	background: #222;
-	font-family: 'Work Sans', sans-serif;
-	font-weight: 400;
-}
-
-.content {
-  height: 100vh;
-  background-image: url(//unsplash.it/1000/1000);
-  background-color: #333;
-  background-blend-mode: multiply;
-  background-size: cover;
-  display: grid;
-  place-items: center;
-}
-
-.formInput {
-    border-radius: 7px;
-}
-
-/* navigation styles start here */
-
-header {
-  background: none;
-  text-align: center;
-  position: fixed;
-  z-index: 999;
-  width: 100%;
-}
-
-/* changed this to
-   allow it to gain focus, making it tabbable */
-.nav-toggle {
-  position: relative !important;
-  margin-top: 3em;
-  top: -9999px !important;
-  left: -9999px !important;
-}
-
-
-.nav-toggle-label {
-  position: absolute;
-  top: 0;
-  left: 0;
-  margin-left: 1em;
-  height: 100%;
-  display: flex;
-  align-items: center;
-}
-
-.nav-toggle-label span,
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  display: block;
-  background: white;
-  height: 2px;
-  width: 2em;
-  border-radius: 2px;
-  position: relative;
-}
-
-.nav-toggle-label span::before,
-.nav-toggle-label span::after {
-  content: '';
-  position: absolute;
-}
-
-.nav-toggle-label span::before {
-  bottom: 7px;
-}
-
-.nav-toggle-label span::after {
-  top: 7px;
-}
-
-nav {
-  position: absolute;
-  text-align: left;
-  top: 100%;
-  left: 0;
-  background: var(--background);
-  width: 100%;
-  transform: scale(1, 0);
-  transform-origin: top;
-  transition: transform 400ms ease-in-out;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-  margin-left: 1em;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  opacity: 0;
-  transition: opacity 150ms ease-in-out;
-}
-
-nav a:hover {
-  color: gray;
-}
-
-.nav-toggle:checked ~ nav {
-  transform: scale(1,1);
-}
-
-.nav-toggle:checked ~ nav a {
-  opacity: 1;
-  transition: opacity 250ms ease-in-out 250ms;
-}
-
-@media screen and (min-width: 3000px) {
-  .nav-toggle-label {
-    display: none;
-  }
-
-  header {
-    display: grid;
-    grid-template-columns: 1fr auto minmax(600px, 3fr) 1fr;
-  }
-  
-  .logo {
-    grid-column: 2 / 3;
-    color: white;
-    z-index: 1000;
-  }
-  
-  nav {
-    // all: unset; /* this causes issues with Edge, since it's unsupported */
-    position: relative;
-    text-align: left;
-    transition: none;
-    transform: scale(1,1);
-    background: none;
-    top: initial;
-    left: initial;
-    /* end Edge support stuff */
-    
-    grid-column: 3 / 4;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  nav ul {
-    display: flex;
-  }
-  
-  nav li {
-    margin-left: 3em;
-    margin-bottom: 0;
-  }
-  
-  nav a {
-    opacity: 1;
-    position: absolute;
-  }
-  
-  nav a::before {
-    content: '';
-    display: block;
-    height: 5px;
-    background: black;
-    position: absolute;
-    top: -.75em;
-    left: 0;
-    right: 0;
-    transform: scale(0, 1);
-    transition: transform ease-in-out 250ms;
-  }
-  
-  nav a:hover::before {
-    transform: scale(1,1);
-  }
-}
-
-.mainContainer {
-    background: #171c32;
-    height: 100vh;
-}
-
-.documentsCard {
-    display: flex;
-    flex-direction: column;
-    padding: 0.5em;
-    align-self: center;
-    justify-self: center;
-}
-
-.documentsCard input {
-    margin-bottom: 1rem;
-}
-
-.documentsCard button {
-    margin-bottom: 1rem;
-}
-
-.welcomeText {
-    display: flex;
-    color: white;
-    background-color: #171c32;
-}
-
-
-nav ul {
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-}
-
-nav li {
-  margin-bottom: 1em;
-    margin-left: 1em;
-    list-style-type: none;
-  }
-
-nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    list-style-type: none;
-  }
-
-  nav a:hover {
-    transition: all .25s ease-in-out;
-}
-
-nav a::after {
-    content: '';
-    display: block;
-    height: 3px;
-    width: 20px;
-    background: #5ea7f7;
-    list-style-type: none;
-}
-
-
-
-
-
-@media(min-width: 468px){
-    .item0 { 
-        position: absolute;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-        z-index: 2;
-        top: 75px;
-        margin: 0%;
-        padding: 0%;
-        color: white;
-        text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-    }
-    .item1 { 
-        grid-area: header;
-        position: absolute;
-        left: 0;
-        width: 100%;
-        text-align: center;
-        text-transform: uppercase;
-        z-index: 2;
-        top: 75%;
-        margin: 0%;
-        padding: 0%;
-        color: white;
-        text-shadow:
-            -1.75px -1.75px 0 #000,
-            1.75px -1.75px 0 #000,
-            -1.75px 1.75px 0 #000,
-            1.75px 1.75px 0 #000;
-     }
-    .item2 { 
-        display: block;
-        position: fixed;
-        background: none;
-        top: 20%; 
-        text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-        margin-left: 0;
-    }
-    .item3 { 
-        grid-area: ourFirm; 
-        background: url(src\assets\nycAerialDark.jpg) no-repeat center center; 
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-        text-shadow:
-            -1px -1px 0 #000,
-            1px -1px 0 #000,
-            -1px 1px 0 #000,
-            1px 1px 0 #000;
-        height: 797px;
-    }
-    .item4 { 
-        grid-area: charlesPic;
-        align-self: center;
-        justify-self: end;
-        width: 65%;
-        height: auto;
-    }
-    .item5 { grid-area: charlesBio; }
-    .item6 { 
-        grid-area: angelaPic; 
-        align-self: center;
-        justify-self: end;
-        width: 65%;
-        height: auto;
-    }
-    .item7 { grid-area: angelaBio; }
-    .item8 { 
-        grid-area: jasonPic; 
-        align-self: center;
-        justify-self: end;
-        width: 65%;
-        height: auto;
-    }
-    .item9 { grid-area: jasonBio; }
-    .item10 { 
-        grid-area: andrewPic; 
-        align-self: center;
-        justify-self: end;
-        width: 65%;
-        height: auto;
-    }
-    .item11 { grid-area: andrewBio; }
-    .item12 { 
-        grid-area: annaPic; 
-        align-self: center;
-        justify-self: end;
-        width: 65%;
-        height: auto;
-    }
-    .item13 { grid-area: annaBio; }
-    .item14 { 
-        grid-area: servicesPic;
-        width: 100%;
-        height: auto;
-        justify-self: end;
-    }
-    .item15 { 
-        grid-area: servicesInfo;
-        display: -webkit-box;
-        display: -webkit-flex;
-        justify-content: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -webkit-box-align: center;
-        background-color: none; 
-    }
-    .item16 { 
-        grid-area: institutionalInfo;
-        display: -webkit-box;
-        display: -webkit-flex;
-        justify-content: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -webkit-box-align: center;
-        background-color: none;
-    }
-    .item17 { 
-        grid-area: institutionalPic;
-        width: 80%;
-        height: auto;
-        justify-self: start;
-     }
-    .item18 { grid-area: differentiationPic;
-        width: 80%;
-        height: auto;
-        justify-self: end;
-     }
-    .item19 { 
-        grid-area: differentiationInfo;
-        display: -webkit-box;
-        display: -webkit-flex;
-        justify-content: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        -webkit-box-align: center;
-        background-color: none; 
-    }
-    .item20 { 
-        grid-area: research;
-        color:white;
-    }
-    .item21 { 
-        grid-area: opinion;
-        color:white;
-    }
-    .item22 { 
-        grid-area: news; 
-        color:white;
-    }
-    .item23 { 
-        grid-area: footer; 
-        color:white;
-    }
-    
-    .grid-container {
-        display: grid;
-        grid-template-areas: 
-            'header header'
-            'ourFirm ourFirm'
-            'leadershipTeamHeadline leadershipTeamHeadline'
-            'charlesPic charlesBio'
-            'angelaPic angelaBio'
-            'jasonPic jasonBio'
-            'andrewPic andrewBio'
-            'annaPic annaBio'
-            'servicesPic servicesInfo'
-            'institutionalInfo institutionalPic'
-            'differentiationPic differentiationInfo'
-            'research research'
-            'opinion opinion'
-            'news news'
-            'footer footer';
-        grid-gap: 0px;
-        background-color: #171c32;
-    }
-    
-    .grid-container > div {
-        text-align: center;
-        padding: 20px 0;
-        font-size: 30px; 
-    }
-    
-    nav ul {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-    }
-    
-    nav li {
-        margin-bottom: 1em;
-        margin-left: 1em;
-        list-style-type: none;
-    }
-    
-    nav a {
-        color: white;
-        text-decoration: none;
-        font-size: 1.2rem;
-        text-transform: uppercase;
-        list-style-type: none;
-    }
-    
-    nav a:hover {
-        transition: all .25s ease-in-out;
-    }
-    
-    nav a::after {
-        content: '';
-        display: block;
-        height: 3px;
-        width: 20px;
-        background: #5ea7f7;
-        list-style-type: none;
-    }
-    
-    .ourFirmHeader {
-        color: white;
-        align-self: center;
-        font-size: 2.5em;
-        z-index: 3;
-    }
-    
-    .ourFirmParagraph {
-        width: 65%;
-        text-align: justify;
-        text-justify: inter-word;
-        color:white;
-        font-size: 15pt;
-        z-index: 3;
-        align-self: center;
-    }
-    
-    .grow { 
-        transition: all .5s ease-in-out; 
-    }
-         
-    .grow:hover { 
-        transform: scale(1.2); 
-    }
-    
-    .location {
-        display: inline;
-    }
-    
-    .locationLogo {
-        display: inline;
-        font-size: 20pt;
-        color: #5ea7f7;
-    }
-    
-    .leadershipTeamHeadline {
-        grid-area: leadershipTeamHeadline; 
-        color: white;
-        font-size: 4.5em;
-        text-align: center;
-    }
-    
-    .teamBiographies {
-        text-align: justify;
-        text-justify: inter-word;
-        color:white;
-        font-size: 12pt;
-        z-index: 3;
-        align-self: center;
-        width: 75%;
-        background-color: #212843;
-    }
-    
-    .teamBiographyHeaders {
-        text-align: left;
-        color:white;
-        font-size: 22pt;
-        z-index: 3;
-        align-self: center;
-        background-color: #212843;
-    }
-    
-    .teamBiographySubheaders {
-        text-align: left;
-        color:white;
-        font-size: 16pt;
-        z-index: 3;
-        align-self: center;
-        background-color: #212843;
-    }
-    
-    .policyResearchHeadline{
-        color: white;
-        font-size: 16pt;
-        background-color: #212843;
-        font-size: 1em;
-    }
-    
-    .policyResearchParagraph{
-        text-align: justify;
-        text-justify: inter-word;
-        color:white;
-        font-size: 12pt;
-        list-style-type: none;
-        width: 65%;
-        background-color: #212843;
-    }
-    
-    .institutionalInvestorHeadline{
-        color: white;
-        font-size: 1em;
-        text-align: left;
-        background-color: #212843;
-    }
-    
-    .institutionalInvestorParagraph {
-        color:white;
-        font-size: 12pt;
-        text-align: left;
-        list-style-type: none;
-        list-style-position: initial;
-        list-style-image: initial;
-        font-weight: 400;
-        background-color: #212843;
-    }
-    
-    .differentiationHeadline {
-        color: white;
-        background-color: #212843;
-        align-self: flex-start;
-        padding-left: 1em;
-        font-size: 1em;
-    }
-    
-    .differentiationParagraph {
-        color: white;
-        text-align: left;
-        list-style-type: none;
-        background-color: #212843;
-        margin-left: 0;
-    }
-
-    .placemat{
+@media only screen and (min-width: 1000px) {
+    body {
+        background-color: red;
         display: flex;
         flex-direction: column;
-        align-items: flex-start;
-        width: 75%;
-        margin-right: auto;
-        margin-left: auto;
-        margin-top: auto;
-        margin-bottom: auto;
-        background: #212843;
     }
+
+    .titleContainer {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        width: 100%;
+        background-color: orange;
+        justify-content: center;
+        margin-top: 25vh;
+        padding: 15px;
+        align-content: center;
+        position: absolute;
+        z-index: 2;
+    }
+    
+    .titleText {
+        display: flex;
+        justify-content: center;
+        font-size: 50px;
+        font-weight: 400;
+        background-color: white;
+    }
+    
+    .subtitleText {
+        display: flex;
+        background-color: red;
+        justify-content: center;
+    }
+    
+    .carouselContainer {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: green;
+        justify-content: center;
+    }
+
+    .locationsContainer {
+        display: flex;
+        flex-direction: row;
+        background-color: indigo;
+        height: 90px;
+        padding: 15px;
+        position: relative;
+        z-index: 2;
+        margin-top: 75vh;
+    }
+
+    .nYCContainer {
+        display: flex;
+        background-color: white;
+        align-items: center;
+    }
+
+    .lonContainer {
+        display: flex;
+        background-color: pink;
+        align-items: center;
+    }
+
+    .dCContainer {
+        display: flex;
+        background-color: red;
+        align-items: center;
+    }
+    
+    .ourFirmContainer {
+        display: flex;
+        height: 100vh;
+        width: 100%;
+        background-color: red;
+        flex-direction: column;
+    }
+
+    .ourFirmTitle {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        margin-top: 5vh;
+        font-size: 4.2rem;
+        line-height: 1em;
+    }
+
+    .ourFirmText {
+        display: flex;
+        background-color: blue;
+        justify-content: center;
+    }
+
+    .teamProfilesContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh; 
+        width: 100%;
+        background-color: green;
+        margin-top: 5vh;
+        padding: 20px;
+    }
+
+    .leadershipTeamTitle {
+        display: flex;
+        font-size: 4.2rem;
+        line-height: 1em;
+        background-color: yellow;
+    }
+    
+    .charlesMyersContainer {
+        display: flex;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: indigo;
+    }
+
+    .charlesMyersPic {
+        display: flex;
+        background-color: white;
+    }
+
+    .charlesMyersBio {
+        display: flex;
+        background-color: red;
+    }
+    
+    .andrewBishopContainer {
+        display: flex;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: orange;
+    }
+
+    .andrewBishopPic {
+        display: flex;
+        background-color: green;
+    }
+
+    .andrewBishopBio {
+        display: flex;
+        background-color: yellow;
+    }
+    
+    .angelaDaltonContainer {
+        display: flex;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: blue;
+    }
+
+    .angelaDaltonPic {
+        display: flex;
+        background-color: white;
+    }
+
+    .angelaDaltonBio {
+        display: flex;
+        background-color: green;
+    }
+    
+    .jasonPressContainer {
+        display: flex;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: red;
+    }
+
+    .jasonPressPic {
+        display: flex;
+        background-color: hotpink;
+    }
+
+    .jasonPressBio {
+        display: flex;
+        background-color: indigo;
+    }
+    
+    .annaRosenbergContainer {
+        display: flex;
+        height: 500px;
+        width: auto;
+        justify-content: center;
+        background-color: orange;
+    }
+
+    .annaRosenbergPic {
+        display: flex;
+        background-color: white;
+    }
+
+    .annaRosenbergBio {
+        display: flex;
+        background-color: blue;
+    }
+    
+    .servicesContainer {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        background-color: violet;
+    }
+    
+    .policyResearchContainer {
+        display: flex;
+        height: 90vh;
+        width: auto;
+        background-color: red;
+        justify-content: center;
+    }
+
+    .policyResearchPic {
+        display: flex;
+        background-color: white;
+    }
+
+    .policyResearchText {
+        display: flex;
+        background-color: blue;
+    }
+    
+    .institutionalInvestorContainer {
+        display: flex;
+        height: 100vh;
+        width: auto;
+        background-color: green;
+        justify-content: center;
+    }
+
+    .institutionalInvestorPic {
+        display: flex;
+        background-color: indigo;
+    }
+
+    .institutionalInvestorText {
+        display: flex;
+        background-color: yellow;
+    }
+    
+    .differentiationContainer {
+        display: flex;
+        height: 100vh;
+        width: auto;
+        background-color: violet;
+        justify-content: center;
+    }
+
+    .differentiationPic {
+        display: flex;
+        background-color: white;
+    }
+
+    .differentiationText {
+        display: flex;
+        background-color: orange;
+    }
+    
+    .newsContainer {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        width: auto;
+        background-color: yellow;
+    }
+
+    .youTubeClip1 {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    .youTubeClip2 {
+        display: flex;
+        justify-content: center;
+        background-color: green;
+    }
+    
+    .emailListSignupContainer {
+        display: flex;
+        flex-direction: column;
+        height: 500px;
+        width: auto;
+        background-color: orange;
+    }
+
+    .emailListItemsContainer {
+        display: flex;
+        background-color: red;
+        justify-content: center;
+    }
+    
+    .contactContainer {
+        display: flex;
+        height: auto;
+        width: auto;
+        background-color: blue;
+    }
+    
+    .footerContainer {
+        display: flex;
+        width: 100vw;
+    }
+    
+    .nYCFooterContainer {
+        display: flex;
+        width: 1fr;
+        background-color: red;
+    }
+    
+    .londonFooterContainer {
+        display: flex;
+        width: 1fr;
+        background-color: green;
+    }
+    
+    .washingtonFooterContainer {
+        display: flex;
+        width: 1fr;
+        background-color: violet;
+    }
+    
+    .copyrightInfoContainer {
+        display: flex;
+        width: 1fr;
+        background-color: yellow;
+    }
+    
     
 }
 
-.differentiationParagraph li::before {
-    content: "\2014";
-    color: #5ea7f7;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-    margin-right: 5px;
-  }
+@media only screen and (max-width: 1000px) {
+    body {
+        background-color: white;
+    }
+}
 
-  .institutionalInvestorParagraph li::before {
-    content: "\2014";
-    color: #5ea7f7;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-  }
-
-  .policyResearchParagraph li::before {
-    content: "\2014";
-    color: #5ea7f7;
-    font-weight: bold;
-    display: inline-block; 
-    width: 1em;
-    margin-left: -1em;
-  }
-
-  .fullBio {
-      display: flex;
-      font-size: 12pt;
-      align-self: center; 
-  }
+@media only screen and (max-width: 760px) {
+    body {
+        background-color: blue;
+    }
+}
 
