@@ -123,17 +123,16 @@
         flex-direction: column;
         width: 100%;
         background-color: green;
-        margin-top: 5vh;
-        padding: 5rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .leadershipTeamTitle {
         display: flex;
         font-size: 4.2rem;
-        line-height: 1em;
         background-color: yellow;
-        padding-bottom: 2rem;
         text-transform: capitalize;
+        padding-left: 5rem;
     }
 
     .fullBio {
@@ -151,6 +150,10 @@
         width: 100%;
         justify-content: center;
         background-color: indigo;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .charlesMyersPic {
@@ -162,6 +165,8 @@
 
     .charlesMyersPic img {
         display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .charlesMyersBio {
@@ -177,7 +182,7 @@
         background-color: orange;
         text-transform: capitalize;
         padding-left: 1rem;
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
 
     .bioPosition {
@@ -185,6 +190,7 @@
         background-color: green;
         text-transform: uppercase;
         padding: 1rem;
+        font-size: 1.5rem;
     }
 
     .bioParagraphs {
@@ -195,74 +201,130 @@
     
     .andrewBishopContainer {
         display: flex;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: orange;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .andrewBishopPic {
         display: flex;
         background-color: green;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .andrewBishopPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .andrewBishopBio {
         display: flex;
+        flex-direction: column;
         background-color: yellow;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .angelaDaltonContainer {
         display: flex;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: blue;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .angelaDaltonPic {
         display: flex;
         background-color: white;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .angelaDaltonPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .angelaDaltonBio {
         display: flex;
+        flex-direction: column;
         background-color: green;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .jasonPressContainer {
         display: flex;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: red;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .jasonPressPic {
         display: flex;
         background-color: hotpink;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .jasonPressPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .jasonPressBio {
         display: flex;
+        flex-direction: column;
         background-color: indigo;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .annaRosenbergContainer {
         display: flex;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: orange;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .annaRosenbergPic {
         display: flex;
         background-color: white;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .annaRosenbergPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .annaRosenbergBio {
         display: flex;
+        flex-direction: column;
         background-color: blue;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .servicesContainer {
