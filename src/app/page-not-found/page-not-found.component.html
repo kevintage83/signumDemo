@@ -1,33 +1,69 @@
 <header>
-  <nav></nav>
+    <input type="checkbox" id="nav-toggle" class="nav-toggle">
+    <nav>
+        <ul>
+        <li style="list-style-type: none"><a [routerLink] = "['/']" fragment="home" style="font-size: 12pt">Home</a></li>
+        <li><a [routerLink] = "['/']" fragment="ourFirm" style="font-size: 12pt">Our Firm</a></li>
+        <li><a [routerLink] = "['/']" fragment="leadershipTeam" style="font-size: 12pt">People</a></li>
+        <li><a [routerLink] = "['/']" fragment="services" style="font-size: 12pt">Services</a></li>
+        <li><a [routerLink] = "['/']" fragment="policyResearch" style="font-size: 12pt" onclick="">Research</a></li>
+        <li><a [routerLink] = "['/']" fragment="opinion" style="font-size: 12pt">Opinion</a></li>
+        <li><a [routerLink] = "['/']" fragment="news" style="font-size: 12pt">News</a></li>
+        <li><a [routerLink] = "['/']" fragment="contact" style="font-size: 12pt">Contact</a></li>
+        <li><a routerLink="/login" style="font-size: 12pt">Login</a></li> 
+        </ul>
+    </nav>
+    <label for="nav-toggle" class="nav-toggle-label">
+        <span></span>
+    </label>
 </header>
 <body>
 
   <div class="titleContainer">
-    <div class="titleText">titleText</div>
-    <div class="subtitleText">subtitleText</div>
+    <div class="titleText">signum global advisors</div>
+    <div class="subtitleText">policy & strategy</div>
   </div>
   
   <div class="carouselContainer">
     <div class="locationsContainer">
-      <div class="nYCContainer">nYCContainer</div>
-      <div class="lonContainer">lonContainer</div>
-      <div class="dCContainer">dCContainer</div>
+      <div class="nYCContainer">New York</div>
+      <div class="locationLogo"></div>
+      <div class="lonContainer">London</div>
+      <div class="locationLogo"></div>
+      <div class="dCContainer">Washington D.C.</div>
     </div>
-  </div><br>
-
-  <div class="ourFirmContainer">ourFirmContainer
-    <div class="ourFirmTitle">ourFirmTitle</div>
-    <div class="ourFirmText">ourFirmText</div>
   </div>
 
-  <div class="teamProfilesContainer">teamProfilesContainer
+  <div class="ourFirmContainer">
+    <div class="ourFirmTitle">Our Firm</div>
+    <div class="ourFirmText">Signum is a new type of advisory firm at the intersection of policy and markets. Signum works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements that will have a material impact upon markets, sectors, and asset classes. We provide the highest quality predictive research, market insights and policy events.  Signum’s Executive team has enjoyed unique exposure to decision-making at senior levels - political and financial. Our clients are better prepared to navigate increased political volatility with greater clarity and certainty.  The firm operates globally from offices in New York, London and Washington D.C.</div>
+  </div>
 
-    <div class="leadershipTeamTitle">leadershipTeamTitle</div>
+  <div class="teamProfilesContainer">
+
+    <div class="leadershipTeamTitle">leadership team</div>
     
     <div class="charlesMyersContainer">
-      <div class="charlesMyersPic">charlesMyersPic</div>
-      <div class="charlesMyersBio">charlesMyersBio</div>
+      <div class="charlesMyersPic">
+        <img style="float: right;" src="https://uploads-ssl.webflow.com/5a72037bead1240001ec7bcf/5a75a6bba1256900015e5529_Charles.jpg">
+      </div>
+      <div class="charlesMyersBio">
+        <div class="bioName">
+          charles myers
+        </div>
+        <div class="bioPosition">
+          chairman
+        </div>
+        <div class="bioParagraphs">
+          Charles has over 20 years of US political and electoral experience advising candidates in Presidential, Senate, House of Representatives, Gubernatorial and Mayoral races, including Hillary Clinton for President 2016. 
+        </div>
+        <div class="bioParagraphs">
+          He also has 25 years of experience in global financial markets. As Chairman of Signum Global, Charles works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements.
+        </div>
+        <div class="fullBio">
+          <a [routerLink] = "['/']" fragment="charlesMyersFullBio" (click)="sendCharlesMessage()">FULL BIO</a><i class="fas fa-arrow-right"></i>
+        </div>
+      </div>
     </div>
 
     <div class="andrewBishopContainer">
