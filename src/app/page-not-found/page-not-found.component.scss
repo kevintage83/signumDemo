@@ -1,14 +1,8 @@
-@media only screen and (min-width: 770px) {
+@media only screen and (min-width: 1055px) {
     body {
-        background-color: red;
         display: flex;
         flex-direction: column;
         color: white;
-        text-shadow:
-            -1.0px -1.0px 0 #000,
-            1.0px -1.0px 0 #000,
-            -1.0px 1.0px 0 #000,
-            1.0px 1.0px 0 #000;
     }
 
     .titleContainer {
@@ -16,13 +10,17 @@
         flex-direction: column;
         height: 15%;
         width: 100%;
-        background-color: orange;
         justify-content: center;
         margin-top: 25vh;
         padding: 15px;
         align-content: center;
         position: absolute;
         z-index: 2;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
     
     .titleText {
@@ -30,13 +28,11 @@
         justify-content: center;
         font-size: 3.5rem;
         font-weight: 400;
-        background-color: white;
         text-transform: uppercase;
     }
     
     .subtitleText {
         display: flex;
-        background-color: red;
         justify-content: center;
         text-transform: capitalize;
         font-size: 2rem;
@@ -47,38 +43,47 @@
         display: flex;
         height: 100vh;
         width: 100%;
-        background-color: green;
         justify-content: center;
+    }
+
+    .carousel-item img {
+        display: flex;
+        max-height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        min-width: 100%;
     }
 
     .locationsContainer {
         display: flex;
         flex-direction: row;
         height: 2.7rem;
-        position: relative;
-        z-index: 2;
+        position: absolute;
+        z-index: 20;
         margin-top: 75vh;
         font-size: 2rem;
         font-weight: 400;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
 
     .nYCContainer {
         display: flex;
-        background-color: white;
         align-items: center;
         padding: 5px;
     }
 
     .lonContainer {
         display: flex;
-        background-color: pink;
         align-items: center;
         padding: 5px;
     }
 
     .dCContainer {
         display: flex;
-        background-color: red;
         align-items: center;
         padding: 5px;
     }
@@ -92,16 +97,18 @@
     
     .ourFirmContainer {
         display: flex;
-        height: 100vh;
         width: 100%;
-        background-color: red;
+        background: url(src\assets\nycAerialDark.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         flex-direction: column;
         justify-content: center;
     }
 
     .ourFirmTitle {
         display: flex;
-        background-color: white;
         justify-content: center;
         margin-top: 5vh;
         font-size: 4.2rem;
@@ -110,7 +117,6 @@
 
     .ourFirmText {
         display: flex;
-        background-color: blue;
         justify-content: center;
         text-align: justify;
         padding-left: 15%;
@@ -122,7 +128,8 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: green;
+        
+        background-color: #171c32;
         padding-top: 5rem;
         padding-bottom: 5rem;
     }
@@ -130,7 +137,8 @@
     .leadershipTeamTitle {
         display: flex;
         font-size: 4.2rem;
-        background-color: yellow;
+        
+        background-color: #171c32;
         text-transform: capitalize;
         padding-left: 5rem;
     }
@@ -143,13 +151,19 @@
     .fa-arrow-right {
         padding-top: .25rem;
         padding-left: 1rem;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
     
     .charlesMyersContainer {
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: indigo;
+        
+        background-color: #171c32;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 1rem;
@@ -158,7 +172,6 @@
 
     .charlesMyersPic {
         display: flex;
-        background-color: white;
         width: 50%;
         justify-content: flex-end;
     }
@@ -203,7 +216,8 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: orange;
+        
+        background-color: #171c32;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 1rem;
@@ -212,7 +226,6 @@
 
     .andrewBishopPic {
         display: flex;
-        background-color: green;
         width: 50%;
         justify-content: flex-end;
     }
@@ -235,7 +248,8 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: blue;
+        
+        background-color: #171c32;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 1rem;
@@ -244,7 +258,6 @@
 
     .angelaDaltonPic {
         display: flex;
-        background-color: white;
         width: 50%;
         justify-content: flex-end;
     }
@@ -267,7 +280,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: red;
+        background-color: #171c32;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 1rem;
@@ -276,7 +289,6 @@
 
     .jasonPressPic {
         display: flex;
-        background-color: hotpink;
         width: 50%;
         justify-content: flex-end;
     }
@@ -299,7 +311,8 @@
         display: flex;
         width: 100%;
         justify-content: center;
-        background-color: orange;
+        
+        background-color: #171c32;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
         margin-top: 1rem;
@@ -308,7 +321,6 @@
 
     .annaRosenbergPic {
         display: flex;
-        background-color: white;
         width: 50%;
         justify-content: flex-end;
     }
@@ -337,7 +349,8 @@
     .servicesContainerTitle {
         display: flex;
         font-size: 4.2rem;
-        background-color: yellow;
+        
+        background-color: #171c32;
         text-transform: capitalize;
         padding-left: 5rem;
     }
@@ -345,7 +358,8 @@
     .policyResearchContainer {
         display: flex;
         width: 100%;
-        background-color: red;
+        
+        background-color: #171c32;
         justify-content: center;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -353,7 +367,6 @@
 
     .policyResearchPic {
         display: flex;
-        background-color: white;
         width: 50%;
         justify-content: flex-end;
     }
@@ -389,7 +402,8 @@
     .institutionalInvestorContainer {
         display: flex;
         width: 100%;
-        background-color: green;
+        
+        background-color: #171c32;
         justify-content: center;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -397,7 +411,6 @@
 
     .institutionalInvestorPic {
         display: flex;
-        background-color: indigo;
         width: 50%;
         justify-content: flex-start;
     }
@@ -419,7 +432,8 @@
     .differentiationContainer {
         display: flex;
         width: 100%;
-        background-color: violet;
+        
+        background-color: #171c32;
         justify-content: center;
         padding-left: 2.5rem;
         padding-right: 2.5rem;
@@ -427,7 +441,6 @@
 
     .differentiationPic {
         display: flex;
-        background-color: white;
         width: 50%;
         justify-content: flex-end;
     }
@@ -450,13 +463,15 @@
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: yellow;
+        
+        background-color: #171c32;
     }
 
     .newsContainerTitle {
         display: flex;
         font-size: 4.2rem;
-        background-color: red;
+        
+        background-color: #171c32;
         text-transform: capitalize;
         padding-left: 5rem;
     }
@@ -464,47 +479,53 @@
     .youTubeClip1 {
         display: flex;
         justify-content: center;
-        background-color: white;
+        margin: 1rem;
     }
 
     .youTubeClip2 {
         display: flex;
         justify-content: center;
-        background-color: green;
+        margin: 1rem;
     }
     
     .emailListSignupContainer {
         display: flex;
         flex-direction: column;
         width: 100%;
-        background-color: orange;
+        
+        background-color: #171c32;
     }
 
     .emailListSignupTitle {
         display: flex;
         font-size: 4.2rem;
-        background-color: red;
+        
+        background-color: #171c32;
         text-transform: capitalize;
         padding-left: 5rem;
     }
 
     .emailListItemsContainer {
         display: flex;
-        background-color: red;
+        
+        background-color: #171c32;
         justify-content: center;
         flex-direction: column;
     }
 
     .emailListSignupSubtitle {
         display: flex;
-        background-color: green;
+        
+        background-color: #171c32;
+        padding-left: 5rem;
+        font-size: 1.5rem;
     }
 
     .emailInputItems {
         display: flex;
-        background-color: lightgoldenrodyellow;
         flex-direction: row;
         justify-content: center;
+        margin: 1rem;
     }
 
     .emailListSignupName {
@@ -517,167 +538,224 @@
         display: flex;
         background-color: lightblue;
         width: 100%;
+        padding-left: 1rem;
     }
 
     .emailListSignupEmail {
         display: flex;
-        background-color: lightcoral;
         width: 40%;
+        margin-right: 1rem;
     }
 
     .emailListSignupEmail input {
         display: flex;
-        background-color: blue;
+        background-color: lightblue;
         width: 100%;
+        margin-left: 1rem;
+        padding-left: 1rem;
     }
 
     .emailSignupButton {
         display: flex;
-        background-color: lightcyan;
+        background-color: red;
+        color: white;
     }
     
     .contactContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
+        width: 100%;
         justify-content: center;
-        width: auto;
-        background-color: blue;
     }
 
     .contactUsImage {
         display: flex;
-        background-color: white;
     }
 
     .contactUsTitle {
         display: flex;
-        background-color: orange;
+        font-size: 4.2rem;
+        
+        background-color: #171c32;
+        text-transform: capitalize;
+        padding-left: 5rem;
     }
     
     .footerContainer {
         display: flex;
-        width: auto;
+        width: 100%;
         flex-direction: column;
     }
 
     .locationFooterContainer {
         display: flex;
-        background-color: yellow;
-        height: 400px;
+        
+        background-color: #171c32;
+        width: 100%;
         justify-content: center;
+        color: white;
+        font-size: 1.3rem;
     }
     
     .nYCFooterContainer {
         display: flex;
         width: 1fr;
-        background-color: red;
+        
+        background-color: #171c32;
+        flex-direction: column;
+        margin: 1rem;
     }
     
     .londonFooterContainer {
         display: flex;
         width: 1fr;
-        background-color: green;
+        
+        background-color: #171c32;
+        flex-direction: column;
+        margin: 1rem;
     }
     
     .washingtonFooterContainer {
         display: flex;
         width: 1fr;
-        background-color: violet;
+        
+        background-color: #171c32;
+        flex-direction: column;
+        margin: 1rem;
     }
     
     .copyrightInfoContainer {
         display: flex;
-        width: 1fr;
+        width: 100%;
         background-color: white;
     }
     
-    
+    .copyrightInfoText {
+        display: flex;
+        width: 100%;
+        text-align: center;
+        font-size: 1.3rem;
+    }
 }
 
-@media only screen and (max-width: 770px) {
+@media only screen and (max-width: 1055px) {
     body {
-        background-color: red;
         display: flex;
         flex-direction: column;
+        color: white;
     }
 
     .titleContainer {
         display: flex;
         flex-direction: column;
-        height: auto;
+        height: 15%;
         width: 100%;
         background-color: orange;
         justify-content: center;
         margin-top: 25vh;
-        padding: 15px;
+        padding: 5px;
         align-content: center;
         position: absolute;
         z-index: 2;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
     
     .titleText {
         display: flex;
         justify-content: center;
-        font-size: 50px;
-        font-weight: 400;
+        font-size: 2.5rem;
+        font-weight: 300;
         background-color: white;
+        text-transform: uppercase;
     }
     
     .subtitleText {
         display: flex;
         background-color: red;
         justify-content: center;
+        text-transform: capitalize;
+        font-size: 1.5rem;
+        font-weight: 400;
     }
     
     .carouselContainer {
         display: flex;
         height: 100vh;
+        max-height: 100vh;
         width: 100%;
-        background-color: green;
         justify-content: center;
+    }
+
+    .carousel-item img {
+        display: flex;
+        max-height: 100vh;
+        min-height: 100vh;
+        width: 100%;
+        min-width: 100%;
     }
 
     .locationsContainer {
         display: flex;
         flex-direction: row;
-        background-color: indigo;
-        height: 90px;
-        padding: 15px;
-        position: relative;
-        z-index: 2;
+        height: 2.7rem;
+        position: absolute;;
+        z-index: 20;
         margin-top: 75vh;
+        font-size: 1.5rem;
+        font-weight: 400;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
 
     .nYCContainer {
         display: flex;
         background-color: white;
         align-items: center;
+        padding: 5px;
     }
 
     .lonContainer {
         display: flex;
         background-color: pink;
         align-items: center;
+        padding: 5px;
     }
 
     .dCContainer {
         display: flex;
         background-color: red;
         align-items: center;
+        padding: 5px;
+    }
+
+    .locationLogo {
+        display: flex;
+        background-color: #5ea7f7;
+        height: 100%;
+        width: 3px;
     }
     
     .ourFirmContainer {
         display: flex;
-        height: 100vh;
         width: 100%;
-        background-color: red;
+        background: url(src\assets\nycAerialDark.jpg) no-repeat center center; 
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
         flex-direction: column;
+        justify-content: center;
     }
 
     .ourFirmTitle {
         display: flex;
-        background-color: white;
         justify-content: center;
         margin-top: 5vh;
         font-size: 4.2rem;
@@ -686,227 +764,388 @@
 
     .ourFirmText {
         display: flex;
-        background-color: blue;
         justify-content: center;
+        text-align: justify;
+        padding-left: 15%;
+        padding-right: 15%;
+        font-size: 1.5rem;
     }
 
     .teamProfilesContainer {
         display: flex;
         flex-direction: column;
-        height: 100vh; 
         width: 100%;
         background-color: green;
-        margin-top: 5vh;
-        padding: 20px;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
     }
 
     .leadershipTeamTitle {
         display: flex;
-        font-size: 4.2rem;
-        line-height: 1em;
+        font-size: 3rem;
         background-color: yellow;
+        text-transform: capitalize;
+        padding-left: .5rem;
+    }
+
+    .fullBio {
+        display: flex;
+        padding-left: 1rem;
+    }
+
+    .fa-arrow-right {
+        padding-top: .25rem;
+        padding-left: 1rem;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
     }
     
     .charlesMyersContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: indigo;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .charlesMyersPic {
         display: flex;
-        flex-direction: row;
         background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .charlesMyersPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .charlesMyersBio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: red;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+
+    .bioName {
+        display: flex;
+        background-color: orange;
+        text-transform: capitalize;
+        padding-left: 1rem;
+        font-size: 1.75rem;
+    }
+
+    .bioPosition {
+        display: flex;
+        background-color: green;
+        text-transform: uppercase;
+        padding-left: 1rem;
+        font-size: 1.25rem;
+    }
+
+    .bioParagraphs {
+        display: flex;
+        background-color: greenyellow;
+        padding: .5rem;
     }
     
     .andrewBishopContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: orange;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .andrewBishopPic {
         display: flex;
-        flex-direction: row;
-        background-color: green;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .andrewBishopPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .andrewBishopBio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: yellow;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .angelaDaltonContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: blue;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .angelaDaltonPic {
         display: flex;
-        flex-direction: row;
         background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .angelaDaltonPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .angelaDaltonBio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: green;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .jasonPressContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: red;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .jasonPressPic {
         display: flex;
-        flex-direction: row;
-        background-color: hotpink;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .jasonPressPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .jasonPressBio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: indigo;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .annaRosenbergContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         justify-content: center;
         background-color: orange;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .annaRosenbergPic {
         display: flex;
-        flex-direction: row;
         background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .annaRosenbergPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .annaRosenbergBio {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: blue;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .servicesContainer {
         display: flex;
         flex-direction: column;
-        width: auto;
-        background-color: violet;
+        width: 100%;
+        background-color: orange;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+    }
+
+    .servicesContainerTitle {
+        display: flex;
+        background-color: white;
+        justify-content: center;
+        margin-top: 5vh;
+        font-size: 4.2rem;
+        line-height: 1em;
+        text-shadow:
+            -1.0px -1.0px 0 #000,
+            1.0px -1.0px 0 #000,
+            -1.0px 1.0px 0 #000,
+            1.0px 1.0px 0 #000;
+    }
+
+    .servicesTitle {
+        display: flex;
+        font-size: 1.7rem;
     }
     
     .policyResearchContainer {
         display: flex;
         flex-direction: column;
-        height: 90vh;
-        width: auto;
-        background-color: red;
+        width: 100%;
         justify-content: center;
+        background-color: indigo;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .policyResearchPic {
         display: flex;
-        flex-direction: row;
         background-color: white;
+        width: 100%;
+        justify-content: center;
     }
 
     .policyResearchText {
         display: flex;
-        flex-direction: row;
-        background-color: blue;
+        flex-direction: column;
+        background-color: red;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .institutionalInvestorContainer {
         display: flex;
-        flex-direction: column;
-        height: 100vh;
-        width: auto;
-        background-color: green;
+        flex-direction: column-reverse;
+        width: 100%;
         justify-content: center;
+        background-color: indigo;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .institutionalInvestorPic {
         display: flex;
-        flex-direction: row;
-        background-color: indigo;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .institutionalInvestorPic img {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
     }
 
     .institutionalInvestorText {
         display: flex;
-        flex-direction: row;
-        background-color: yellow;
+        flex-direction: column;
+        background-color: red;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .differentiationContainer {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: auto;
-        background-color: violet;
+        width: 100%;
         justify-content: center;
+        background-color: indigo;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .differentiationPic {
         display: flex;
-        flex-direction: row;
         background-color: white;
+        width: 100%;
+        justify-content: center;
+    }
+
+    .differentiationPic img {
+        display: flex;
+        background-color: white;
+        width: 100%;
+        justify-content: center;
     }
 
     .differentiationText {
         display: flex;
-        flex-direction: row;
-        background-color: orange;
+        flex-direction: column;
+        background-color: red;
+        font-size: 1.2rem;
+        width: 100%;
     }
     
     .newsContainer {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: auto;
+        width: 100%;
         background-color: yellow;
+    }
+
+    .newsContainerTitle {
+        display: flex;
+        background-color: green;
+        justify-content: center;
+        font-size: 4.2rem;
     }
 
     .youTubeClip1 {
         display: flex;
         justify-content: center;
+        width: 100%;
         background-color: white;
+        margin-bottom: 1rem;
     }
 
     .youTubeClip2 {
         display: flex;
         justify-content: center;
+        width: 100%;
         background-color: green;
     }
     
     .emailListSignupContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         background-color: orange;
     }
 
@@ -916,16 +1155,23 @@
         background-color: red;
         justify-content: center;
         flex-direction: column;
+        width: 100%;
     }
 
     .emailListSignupTitle {
         display: flex;
-        background-color: white;
+        background-color: gray;
+        justify-content: center;
+        font-size: 4.2rem;
+        width: 100%;
     }
 
     .emailListSignupSubtitle {
         display: flex;
         background-color: green;
+        width: 95%;
+        margin: .7rem;
+        margin-right: .7rem;
     }
 
     .emailInputItems {
@@ -933,30 +1179,43 @@
         flex-direction: column;
         background-color: red;
         justify-content: center;
+        width: 100%;
     }
 
     .emailListSignupName {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: lightblue;
+        width: 100%;
+    }
+
+    .emailListSignupName input {
+        display: flex;
+        margin: 1rem;
     }
 
     .emailListSignupEmail {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
         background-color: lightcoral;
+        width: 100%;
+    }
+
+    .emailListSignupEmail input {
+        display: flex;
+        margin: 1rem;
     }
 
     .emailSignupButton {
         display: flex;
-        flex-direction: row;
-        background-color: lightcyan;
+        flex-direction: column;
+        background-color: greenyellow;
+        margin: 1em;
     }
     
     .contactContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
         justify-content: center;
         width: 100%;
         background-color: blue;
@@ -970,6 +1229,8 @@
     .contactUsTitle {
         display: flex;
         background-color: orange;
+        justify-content: center;
+        font-size: 4.2rem;
     }
     
     .footerContainer {
@@ -979,27 +1240,29 @@
 
     .locationFooterContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         background-color: yellow;
-        height: 400px;
         width: 100%;
         justify-content: center;
     }
     
     .nYCFooterContainer {
         display: flex;
+        flex-direction: column;
         width: 33%;
         background-color: red;
     }
     
     .londonFooterContainer {
         display: flex;
+        flex-direction: column;
         width: 33%;
         background-color: green;
     }
     
     .washingtonFooterContainer {
         display: flex;
+        flex-direction: column;
         width: 33%;
         background-color: violet;
     }
@@ -1046,7 +1309,8 @@ header {
 .nav-toggle-label span::after {
     display: block;
     background: white;
-    height: 2px;
+    box-shadow: 1px 1px, -1px -1px, 1px -1px, -1px 1px;
+    height: 3px;
     width: 2em;
     border-radius: 2px;
     position: relative;
