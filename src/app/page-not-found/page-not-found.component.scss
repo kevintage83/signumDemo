@@ -333,67 +333,132 @@
         width: auto;
         background-color: violet;
     }
+
+    .servicesContainerTitle {
+        display: flex;
+        font-size: 4.2rem;
+        background-color: yellow;
+        text-transform: capitalize;
+        padding-left: 5rem;
+    }
     
     .policyResearchContainer {
         display: flex;
-        height: 90vh;
-        width: auto;
+        width: 100%;
         background-color: red;
         justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .policyResearchPic {
         display: flex;
         background-color: white;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .policyResearchPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .policyResearchText {
         display: flex;
         background-color: blue;
+        flex-direction: column;
+        font-size: 1.2rem;
+        width: 50%;
+    }
+
+    .servicesTitle {
+        display: flex;
+        background-color: orange;
+        text-transform: capitalize;
+        padding-left: 1rem;
+        font-size: 2.5rem;
+    }
+
+    .servicesPara {
+        display: flex;
+        background-color: greenyellow;
+        padding: 1rem;
     }
     
     .institutionalInvestorContainer {
         display: flex;
-        height: 100vh;
-        width: auto;
+        width: 100%;
         background-color: green;
         justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .institutionalInvestorPic {
         display: flex;
         background-color: indigo;
+        width: 50%;
+        justify-content: flex-start;
+    }
+
+    .institutionalInvestorPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .institutionalInvestorText {
         display: flex;
         background-color: yellow;
+        flex-direction: column;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .differentiationContainer {
         display: flex;
-        height: 100vh;
-        width: auto;
+        width: 100%;
         background-color: violet;
         justify-content: center;
+        padding-left: 2.5rem;
+        padding-right: 2.5rem;
     }
 
     .differentiationPic {
         display: flex;
         background-color: white;
+        width: 50%;
+        justify-content: flex-end;
+    }
+
+    .differentiationPic img {
+        display: flex;
+        width: 100%;
+        min-height: inherit;
     }
 
     .differentiationText {
         display: flex;
         background-color: orange;
+        flex-direction: column;
+        font-size: 1.2rem;
+        width: 50%;
     }
     
     .newsContainer {
         display: flex;
         flex-direction: column;
-        height: 100vh;
-        width: auto;
+        width: 100%;
         background-color: yellow;
+    }
+
+    .newsContainerTitle {
+        display: flex;
+        font-size: 4.2rem;
+        background-color: red;
+        text-transform: capitalize;
+        padding-left: 5rem;
     }
 
     .youTubeClip1 {
@@ -411,9 +476,16 @@
     .emailListSignupContainer {
         display: flex;
         flex-direction: column;
-        height: 500px;
-        width: auto;
+        width: 100%;
         background-color: orange;
+    }
+
+    .emailListSignupTitle {
+        display: flex;
+        font-size: 4.2rem;
+        background-color: red;
+        text-transform: capitalize;
+        padding-left: 5rem;
     }
 
     .emailListItemsContainer {
@@ -421,11 +493,6 @@
         background-color: red;
         justify-content: center;
         flex-direction: column;
-    }
-
-    .emailListSignupTitle {
-        display: flex;
-        background-color: white;
     }
 
     .emailListSignupSubtitle {
@@ -443,11 +510,25 @@
     .emailListSignupName {
         display: flex;
         background-color: lightblue;
+        width: 40%;
+    }
+
+    .emailListSignupName input {
+        display: flex;
+        background-color: lightblue;
+        width: 100%;
     }
 
     .emailListSignupEmail {
         display: flex;
         background-color: lightcoral;
+        width: 40%;
+    }
+
+    .emailListSignupEmail input {
+        display: flex;
+        background-color: blue;
+        width: 100%;
     }
 
     .emailSignupButton {
