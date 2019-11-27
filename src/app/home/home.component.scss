@@ -1299,12 +1299,12 @@
 
     .locationsContainer {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         height: 2.7rem;
         position: absolute;;
         z-index: 20;
         margin-top: 75vh;
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         font-weight: 400;
         text-shadow:
             -1.0px -1.0px 0 #000,
@@ -1421,6 +1421,7 @@
         display: flex;
         width: 100%;
         min-height: inherit;
+        max-height: 50vh;
     }
 
     .charlesMyersBio {
@@ -1474,7 +1475,8 @@
     .andrewBishopPic img {
         display: flex;
         width: 100%;
-        min-height: inherit;
+        min-height: 50vh;
+        max-height: 50vh;
     }
 
     .andrewBishopBio {
@@ -1507,6 +1509,7 @@
         display: flex;
         width: 100%;
         min-height: inherit;
+        max-height: 50vh;
     }
 
     .angelaDaltonBio {
@@ -1657,6 +1660,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        max-height: 30vh;
     }
 
     .institutionalInvestorText {
@@ -1689,6 +1693,7 @@
         display: flex;
         width: 100%;
         justify-content: center;
+        max-height: 30vh;
     }
 
     .differentiationText {
