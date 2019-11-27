@@ -2,15 +2,15 @@
     <input type="checkbox" id="nav-toggle" class="nav-toggle">
     <nav>
         <ul>
-        <li style="list-style-type: none"><a [routerLink] = "['/']" fragment="home">Home</a></li>
-        <li><a [routerLink] = "['/']" fragment="ourFirm">Our Firm</a></li>
-        <li><a [routerLink] = "['/']" fragment="leadershipTeam">People</a></li>
-        <li><a [routerLink] = "['/']" fragment="services">Services</a></li>
-        <li><a [routerLink] = "['/']" fragment="policyResearch" onclick="">Research</a></li>
-        <li><a [routerLink] = "['/']" fragment="opinion">Opinion</a></li>
-        <li><a [routerLink] = "['/']" fragment="news">News</a></li>
-        <li><a [routerLink] = "['/']" fragment="contact">Contact</a></li>
-        <li><a routerLink="/login">Login</a></li> 
+          <li style="list-style-type: none"><a [routerLink] = "['/']" fragment="home">Home</a></li>
+          <li><a [routerLink] = "['/']" fragment="ourFirm">Our Firm</a></li>
+          <li><a [routerLink] = "['/']" fragment="leadershipTeam">People</a></li>
+          <li><a [routerLink] = "['/']" fragment="services">Services</a></li>
+          <li><a [routerLink] = "['/']" fragment="policyResearch">Research</a></li>
+          <li><a [routerLink] = "['/']" fragment="opinion">Opinion</a></li>
+          <li><a [routerLink] = "['/']" fragment="news">News</a></li>
+          <li><a [routerLink] = "['/']" fragment="contact">Contact</a></li>
+          <li><a routerLink="/login">Login</a></li> 
         </ul>
     </nav>
     <label for="nav-toggle" class="nav-toggle-label">
@@ -50,12 +50,12 @@
 
   </div>
 
-  <div class="ourFirmContainer">
+  <div class="ourFirmContainer" id="ourFirm">
     <div class="ourFirmTitle">Our Firm</div>
     <div class="ourFirmText">Signum is a new type of advisory firm at the intersection of policy and markets. Signum works with financial institutions and multi-national businesses to anticipate and assess policy agendas and announcements that will have a material impact upon markets, sectors, and asset classes. We provide the highest quality predictive research, market insights and policy events.  Signum’s Executive team has enjoyed unique exposure to decision-making at senior levels - political and financial. Our clients are better prepared to navigate increased political volatility with greater clarity and certainty.  The firm operates globally from offices in New York, London and Washington D.C.</div>
   </div>
 
-  <div class="teamProfilesContainer">
+  <div class="teamProfilesContainer" id="leadershipTeam">
 
     <div class="leadershipTeamTitle">leadership team</div>
     
@@ -176,7 +176,7 @@
 
   </div>
 
-  <div class="servicesContainer">
+  <div class="servicesContainer" id="services">
     
       <div class="servicesContainerTitle">Services</div>
 
@@ -184,7 +184,7 @@
       <div class="policyResearchPic">
         <img style="max-width: 400px" src="../assets/downingStreetWhitehall.jpg" class="item14" alt="Whitehall and Downing Street">
       </div>
-      <div class="policyResearchText">
+      <div class="policyResearchText" id="policyResearch">
         <div class="servicesTitle">
           Policy Research & Analytics
         </div>
@@ -199,7 +199,7 @@
       </div>
     </div>
 
-    <div class="institutionalInvestorContainer">
+    <div class="institutionalInvestorContainer" id="opinion">
       <div class="institutionalInvestorText">
         <div class="servicesTitle">
           Institutional Investor & Corporate Advisory
@@ -239,7 +239,7 @@
 
   </div>
 
-  <div class="newsContainer">
+  <div class="newsContainer" id="news">
     
     <div class="newsContainerTitle">Media Appearances</div>
 
@@ -269,7 +269,7 @@
     </div>
   </div>
 
-  <div class="contactContainer">
+  <div class="contactContainer" id="contact">
     <div class="contactUsTitle">Contact Us</div>
     <div class="contactUsImage">
         <img src="../assets/worldGridBanner.jpg" class="w-100">
