@@ -2069,3 +2069,28 @@ nav a:hover {
     opacity: 1;
     transition: opacity 250ms ease-in-out 250ms;
 }
+
+.list-bullet{
+    width: 20px;
+    height: 1px;
+    margin-top: 15px;
+    margin-right: 10px;
+    flex: 20px;
+    background-color: #5ea7f7; 
+}
+
+.list-text{
+    padding-right: 0px;
+    padding-left: 0px;
+    flex-basis: 100%;
+    color: rgba(247, 251, 252, 0.6);
+    font-size: 1em;
+    line-height: 1.375em;
+    font-weight: 400;
+}
+
+ul li {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+}
