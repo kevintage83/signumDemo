@@ -6,6 +6,8 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
   styleUrls: ['./login.component.scss']
 })
 export class LoginComponent implements OnInit {
+
+  currentYear: number = new Date().getFullYear();
   
   constructor() { }
   @Output() messageEvent = new EventEmitter<string>();

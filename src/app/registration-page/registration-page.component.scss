@@ -279,3 +279,9 @@ nav a::after {
         1px 1px 0 #000;
     margin-left: 0;
 }
+
+.copyrightInfoContainer {
+  display: flex;
+  width: 1fr;
+  background-color: white;
+}

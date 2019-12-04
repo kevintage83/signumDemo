@@ -7,6 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ClientHomePageComponent implements OnInit {
 
+  currentYear: number = new Date().getFullYear();
+
   constructor() { }
 
   message= "from the client-home-page.component"

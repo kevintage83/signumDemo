@@ -44,6 +44,11 @@ body {
   justify-self: flex-end;
 }
 
+.iframeContainer iframe {
+  display: flex;
+  padding-top: 5vh;
+}
+
 .formInput {
     border-radius: 7px;
 }
