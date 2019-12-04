@@ -61,7 +61,7 @@
     
     <div class="charlesMyersContainer">
       <div class="charlesMyersPic">
-        <img style="float: right;" src="https://uploads-ssl.webflow.com/5a72037bead1240001ec7bcf/5a75a6bba1256900015e5529_Charles.jpg">
+        <img style="float: right;" src="https://uploads-ssl.webflow.com/5a72037bead1240001ec7bcf/5a75a6bba1256900015e5529_Charles.jpg" alt="Charles Myers" id="charlesMyersFullBio">
       </div>
       <div class="charlesMyersBio">
         <div class="bioName">
@@ -70,6 +70,7 @@
         <div class="bioPosition">
           chairman
         </div>
+        <hr>
         <div class="bioParagraphs">
           Charles has over 20 years of US political and electoral experience advising candidates in Presidential, Senate, House of Representatives, Gubernatorial and Mayoral races, including Hillary Clinton for President 2016. 
         </div>
@@ -93,6 +94,7 @@
         <div class="bioPosition">
           senior partner
         </div>
+        <hr>
         <div class="bioParagraphs">
           Angela Dalton is a Senior Partner of Signum Global Advisors. She has 19 years of experience in capital markets spanning UBS, Evercore and Guggenheim. Most recently, she served as TMT Equities Sector Head at both Evercore and Guggenheim, and was Co-Founder of the Evercore Equities business.
         </div>
@@ -116,6 +118,7 @@
         <div class="bioPosition">
           senior partner
         </div>
+        <hr>
         <div class="bioParagraphs">
             With more than 20 years in the financial markets industry, Jason Press leads Signum Global Advisors's sales and distribution efforts. He works with a wide variety of financial institutions, providing insights, and forecasting how political and global macro developments move equity, foreign exchange, and fixed income markets.
         </div>
@@ -139,6 +142,7 @@
         <div class="bioPosition">
           partner
         </div>
+        <hr>
         <div class="bioParagraphs">
           Andrew Bishop, Partner at Signum Global Advisors, is an established political analyst with a ten-year track record of advising institutional investors, corporates and governments on political risks in developed, emerging, and frontier markets.
         </div>
@@ -162,6 +166,9 @@
         <div class="bioPosition">
           partner
         </div>
+        <div class="horizontalRow">
+          <hr>
+        </div> 
         <div class="bioParagraphs">
           Anna Rosenberg is Partner, Head of Europe and UK and member of Signum’s Global Management Committee.
         </div>
@@ -264,13 +271,14 @@
           <input placeholder="Email" type="email">
       </div> 
       <div class="emailSignupButton">
-        <button class="emailListSignup btn btn-submit">Sign up</button>
+        <button class="emailListSignup btn btn-submit" (click)="sendSignUpMessage()">Sign up</button>
       </div>
     </div>
   </div>
 
   <div class="contactContainer" id="contact">
     <div class="contactUsTitle">Contact Us</div>
+    <div class="contactUsText">research@signumglobal.com</div>
     <div class="contactUsImage">
         <img src="../assets/worldGridBanner.jpg" class="w-100">
     </div>
