@@ -3,7 +3,7 @@ This is a demo app for Signum Global Advisory. The client, Signum Global Advisor
 The program also has a file directory, integrating a file management system for the firm's IT and marketing department. 
 
 <p align="center">
-<img src="7ED6E9D8-72D2-4B22-B064-0029E4AC96BA.jpeg" width="50%"/>
+<img src="E33E4E03-D975-4E17-991D-DC28464D46F5.jpeg" width="50%"/>
 </p>
 
 ## Installation
